@@ -1,0 +1,216 @@
+/*Imports/ variaveis*/
+:root{
+    /*Cores*/
+    --AmareloQueimado:rgb(241, 196, 15);
+    --PretoPoucoEscuro:rgb(23, 32, 42) ;
+    --BrancoEscurecido: rgb(208, 211, 212);
+    --HeaderPlanoDeFundo: rgb(0, 0, 35);
+    --PlanoDeFundoBody: rgb(87, 88, 88);
+    --LinkSelecionado: rgb(154, 125, 10);
+    --PlanoDeFundoCarrosel: rgb(40, 41, 42);
+    --BordaBoxesCarrosel: rgb(191, 192, 193);
+    --TituloPlanoDeFundo: rgb(5, 18, 31);
+    --AzulMuitoEscuroDestaque: rgb(39, 45, 51); 
+    --UsuarioPlanoDeFundo: rgb(5, 5, 47);
+}
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
+
+/*tags*/
+
+body{
+    background-color: var(--PlanoDeFundoBody);
+    font-family: 'Fjalla One', sans-serif;
+}
+a, a:visited{
+    text-decoration: none;
+    color: var(--AmareloQueimado);
+}
+a:hover{
+    color: var(--LinkSelecionado);
+    cursor: pointer;   
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    text-align: center
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--AmareloQueimado);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Cabeçalho da página*/
+
+header{
+    color: var(--AmareloQueimado);
+    padding-bottom: 10px;
+    background-color: var(--HeaderPlanoDeFundo);
+    height: fit-content;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Fjalla One', sans-serif;
+    padding-bottom: 5px; 
+}
+.Inicial{
+    font-size: 30px;
+    cursor:default;
+}
+header #Pesquisar{
+    flex-direction: row-reverse;
+    height: 60px;
+}
+#Pesquisar button{
+    height: 100%;
+    width: 50px;
+    background-color: var(--AzulMuitoEscuroDestaque) ;
+    border: none;
+    color: var(--AmareloQueimado);
+    border-radius: 10px;
+    margin-left: 5px;
+
+}
+#Pesquisar button:hover{
+    background-color: var(--AmareloQueimado);
+    color: white;
+    cursor: pointer;
+}
+header #Pesquisar input{
+    font-size: 14px;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.usuario{
+    height: fit-content;
+    margin-right:20px;
+    
+    padding: 10px;
+}
+.usuario:hover .usuarioNome{
+    color: var(--AmareloQueimado);
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+
+.usuarioFoto{
+    margin-right:15px;
+    height:55px;
+    width:50px;
+}
+.usuarioNome{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: 'Fjalla One', sans-serif;
+}
+header #escolhas{
+    width: 100%;
+    padding-top: 10px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+#escolhas a{
+    background-color: rgb(26, 42, 61);
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+}
+#escolhas a:hover{
+    color: rgb(26, 42, 61);
+    background-color: var(--AmareloQueimado);
+}
+
+/*Titulos*/
+
+.titulo{
+    font-size: 2rem;
+    background-color: var(--TituloPlanoDeFundo);
+    color: var(--AmareloQueimado);
+    padding-bottom: 0.3%;
+    padding-top: 0.3%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center
+}
+
+/*Carrosel*/
+.carrosel{
+    height: 100%;
+    width: 100%;
+    background-color: var(--PlanoDeFundoCarrosel)   ;
+
+}
+.box-carrosel{
+    height: 350px;
+    width: 100px;
+    display: block;
+    cursor: pointer;
+    border: solid var(--AzulMuitoEscuroDestaque) 5px ;
+}
+
+
+.item p{
+    text-align: center;
+    color: var(--AmareloQueimado);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.1rem;
+    background-color: var(--AzulMuitoEscuroDestaque);
+    font-weight: bolder;
+    height: 70px;
+    padding-top: 5px;
+    overflow: auto;
+}
+
+.item:hover img{
+    border: solid var(--AmareloQueimado) 15px;
+    background-color: var(--AmareloQueimado);
+   
+
+}
+.item:hover p{
+    background-color: var(--AmareloQueimado);
+    color: var(--AzulMuitoEscuroDestaque);
+    
+}
+
+/*Autores em rolagem*/
+
+.carrosel-Autores .item{
+    background-color: var(--AzulMuitoEscuroDestaque);
+}
+.box-autores{
+    width: 15vw;
+    height: 17vw;
+}
+
+/*rodapé*/
+footer{
+    padding-top: 10px;
+    background-color: var(--PretoPoucoEscuro);
+}
