@@ -1,18 +1,29 @@
-/*Variáveis e imports*/
+/*VariÃ¡veis e imports*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 @import url(../../css/main.css);
 :root{
-    /*Cores*/
-    --AmareloQueimado:rgb(241, 196, 15);
+    /*Cores Usadas*/ 
+    /*--AmareloQueimado:rgb(241, 196, 15);
     --PretoPoucoEscuro:rgb(23, 32, 42) ;
-    --BrancoEscurecido: rgb(208, 211, 212);
+    --BrancoEscurecido: rgb(208, 211, 212);  
     --HeaderPlanoDeFundo: rgb(0, 0, 35);
     --PlanoDeFundoBody: rgb(87, 88, 88);
-    --LinkSelecionado: rgb(154, 125, 10);
-    --PlanoDeFundoCarrosel: rgb(40, 41, 42);
-    --BordaBoxesCarrosel: rgb(191, 192, 193);
-    --TituloPlanoDeFundo: rgb(5, 18, 31);
-    --AzulMuitoEscuroDestaque: rgb(39, 45, 51); 
+    --LinkSelecionado: rgb(154, 125, 10); 
+    --PlanoDeFundoCarrosel: rgb(40, 41, 42); 
+    --BordaBoxesCarrosel: rgb(191, 192, 193);  
+    --TituloPlanoDeFundo: rgb(5, 18, 31); 
+    --AzulMuitoEscuroDestaque: rgb(39, 45, 51); */
+    /*AutalizaÃ§Ã£o*/
+    --AmareloQueimado:rgb(241, 196, 15);
+    --PretoPoucoEscuro:rgb(23, 32, 42) ;
+    --BrancoEscurecido: rgb(208, 211, 212);  
+    --HeaderPlanoDeFundo: rgb(0, 0, 35);
+    --PlanoDeFundoBody: rgb(41, 79, 79);
+    --LinkSelecionado: rgb(154, 125, 10); 
+    --PlanoDeFundoCarrosel: rgb(40, 41, 42); 
+    --BordaBoxesCarrosel: rgb(191, 192, 193);  
+    --TituloPlanoDeFundo: rgb(5, 18, 31); 
+    --AzulMuitoEscuroDestaque: rgb(39, 45, 51);
 }
 /*Tags*/
 main >h1{
@@ -25,22 +36,29 @@ main >h1{
     padding: 4px;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*main*/
 
 .corpo{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-gap: 2vw;
     background: linear-gradient(rgb(0,0,0,.5),rgb(0,0,0,.5) 100%),url(../img/outros/PlanoDefundo.png);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 30px 10% 30px 10%;
     width: 100%;
     height: 100%;
 }
 .livro-container{
-    width: 330px;
-    height:450px;
+    width: 340px;
+    height:420px;
     margin: 5px;
     padding: 10px;
     border-top: 10px;
@@ -49,10 +67,12 @@ main >h1{
 }
 .livro-container img{
     width: 100%;
-    height: 400px;
+    height: 90%;
 }
 .livro-container p{
-    font-size: 1.1vw;
+    padding-top: 10px;
+    height: 10%;
+    font-size: 1vw;
     font-family: 'Fjalla One', sans-serif;
     font-weight: bolder;
     overflow:hidden;
@@ -61,13 +81,35 @@ main >h1{
 .livro-container:hover{
     background: var(--AmareloQueimado);
     border:10px solid var(--AmareloQueimado);
+    cursor: pointer;
     
 }
 .livro-container:hover p{
     color: var(--AzulMuitoEscuroDestaque);
-    font-size: 1vw;
 }
 /*Selecionar a pagina*/
+
+section.selecionar-pag{
+    height: 150px;
+    width: calc(50% + 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    margin: 10px 0px 0px 10px;
+    border-radius: 30%;
+    background-color: var(--PretoPoucoEscuro);
+    font-size: 2vw;
+    align-self: center;
+}
+.pag{
+    color:var(--AmareloQueimado);    
+}
+.numero-pag, #ordem-pag{
+    font-size: 2rem;
+    color: white;
+}
 
 /*footer*/
 
