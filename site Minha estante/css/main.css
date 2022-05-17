@@ -30,6 +30,10 @@
 body{
     background-color: var(--PlanoDeFundoBody);
     font-family: 'Fjalla One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:100%
 }
 a, a:visited{
     text-decoration: none;
@@ -164,32 +168,70 @@ header #escolhas{
     color: var(--AmareloQueimado);
     padding-bottom: 0.3%;
     padding-top: 0.3%;
-    margin-bottom: 5px;
     margin-top: 5px;
     text-align: center
+}
+/*Melhores Livros*/
+.melhores{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: var(--PlanoDeFundoCarrosel)
+}
+
+.melhores .item img{
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+.melhores .item{
+    height: 100%;
+    width: 20%;
+    margin: 10px 0.5vw;
+}
+.melhores #primeiro{
+    order: 2;
+    background:yellow
+    
+}
+.melhores #segundo{
+    order: 1;
+}
+.melhores #terceiro{
+    order: 3;
+}
+.melhores #quarto{
+    order: 0;
+}
+.melhores #quinto{
+    order: 4;
 }
 
 /*Carrosel*/
 .carrosel{
     height: 100%;
     width: 100%;
-    background-color: var(--PlanoDeFundoCarrosel)   ;
+    background-color: var(--PlanoDeFundoCarrosel);
+    padding: 20px;
 
 }
 .box-carrosel{
-    height: 350px;
-    width: 100px;
+    margin-top: 10px
+    height: 400px;
+    width: 300px;
     display: block;
     cursor: pointer;
     border: solid var(--AzulMuitoEscuroDestaque) 5px ;
 }
 
-
 .item p{
     text-align: center;
+    height:10%;
     color: var(--AmareloQueimado);
     font-family: 'Fjalla One', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: var(--AzulMuitoEscuroDestaque);
     font-weight: bolder;
     height: 70px;
@@ -202,6 +244,9 @@ header #escolhas{
     background-color: var(--AmareloQueimado);
    
 
+}
+.item{
+    min-height: 100%;
 }
 .item:hover p{
     background-color: var(--AmareloQueimado);
