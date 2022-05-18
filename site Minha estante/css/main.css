@@ -172,6 +172,7 @@ header #escolhas{
     text-align: center
 }
 /*Melhores Livros*/
+
 .melhores{
     display: flex;
     justify-content: space-evenly;
@@ -187,26 +188,56 @@ header #escolhas{
     height: 400px;
 }
 .melhores .item{
-    height: 100%;
     width: 20%;
-    margin: 10px 0.5vw;
+    margin: 10px 0.5vw 0 0;
+    padding: 14px;
 }
+
+/*Ordem dos itens*/
 .melhores #primeiro{
+    background: rgb(255, 225, 55);
     order: 2;
-    background:yellow
-    
 }
 .melhores #segundo{
     order: 1;
+    background: seashell;
 }
 .melhores #terceiro{
     order: 3;
+    background: rgb(87, 36, 36);
 }
 .melhores #quarto{
     order: 0;
+    background: rgb(28, 29, 34);
 }
 .melhores #quinto{
     order: 4;
+    background: rgb(17, 17, 112);
+}
+/*Cores das .box-livros quando o mouse está em cima*/
+.melhores #primeiro p,.melhores #primeiro:hover .box-livros{
+    background: rgb(255, 225, 55);
+}
+.melhores #segundo p,.melhores #segundo:hover .box-livros{
+    background:rgb(255, 253, 251);
+}
+.melhores #terceiro p, .melhores #terceiro:hover .box-livros{
+   background: rgb(87, 36, 36);
+}
+.melhores #quarto p, .melhores #quarto:hover .box-livros{
+    background: rgb(28, 29, 34);
+}
+.melhores #quinto p, .melhores #quinto:hover .box-livros{
+    background: rgb(17, 17, 112);
+}
+/*cores dos parágrafos*/
+#primeiro p,#terceiro p,#quarto p,#quinto p, #segundo p{
+    color: rgb(22, 160, 133);
+      
+}
+#primeiro:hover p,#terceiro:hover p,#quarto:hover p,#quinto:hover p, #segundo:hover p{
+    color: rgb(31, 126, 70);
+      
 }
 
 /*Carrosel*/
@@ -218,12 +249,13 @@ header #escolhas{
 
 }
 .box-carrosel{
-    margin-top: 10px
+    margin-top: 10px;
     height: 400px;
     width: 300px;
     display: block;
     cursor: pointer;
-    border: solid var(--AzulMuitoEscuroDestaque) 5px ;
+    background: var(--AzulMuitoEscuroDestaque);
+    padding: 14px;
 }
 
 .item p{
@@ -234,20 +266,16 @@ header #escolhas{
     font-size: 1rem;
     background-color: var(--AzulMuitoEscuroDestaque);
     font-weight: bolder;
-    height: 70px;
     padding-top: 5px;
     overflow: auto;
+    margin-bottom: 5px;
 }
 
 .item:hover img{
-    border: solid var(--AmareloQueimado) 15px;
-    background-color: var(--AmareloQueimado);
-   
+    padding:16px;
+    background: var(--AmareloQueimado);
+}
 
-}
-.item{
-    min-height: 100%;
-}
 .item:hover p{
     background-color: var(--AmareloQueimado);
     color: var(--AzulMuitoEscuroDestaque);
@@ -257,7 +285,7 @@ header #escolhas{
 /*Autores em rolagem*/
 
 .carrosel-Autores .item{
-    background-color: var(--AzulMuitoEscuroDestaque);
+    background: var(--AzulMuitoEscuroDestaque);
 }
 .box-autores{
     width: 15vw;
