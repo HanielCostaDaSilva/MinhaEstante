@@ -1,17 +1,7 @@
 /*Imports/ variaveis*/
+/*https://tailwindcss.com/docs/installation/using-postcss*/
 :root{
-       /*Cores Usadas*/ 
-    /*--AmareloQueimado:rgb(241, 196, 15);
-    --PretoPoucoEscuro:rgb(23, 32, 42) ;
-    --BrancoEscurecido: rgb(208, 211, 212);  
-    --HeaderPlanoDeFundo: rgb(0, 0, 35);
-    --PlanoDeFundoBody: rgb(87, 88, 88);
-    --LinkSelecionado: rgb(154, 125, 10); 
-    --PlanoDeFundoCarrosel: rgb(40, 41, 42); 
-    --BordaBoxesCarrosel: rgb(191, 192, 193);  
-    --TituloPlanoDeFundo: rgb(5, 18, 31); 
-    --AzulMuitoEscuroDestaque: rgb(39, 45, 51); */
-    /*Autalização*/
+    /*cores*/
     --AmareloQueimado:rgb(241, 196, 15);
     --PretoPoucoEscuro:rgb(23, 32, 42) ;
     --BrancoEscurecido: rgb(208, 211, 212);  
@@ -22,6 +12,8 @@
     --BordaBoxesCarrosel: rgb(191, 192, 193);  
     --TituloPlanoDeFundo: rgb(5, 18, 31); 
     --AzulMuitoEscuroDestaque: rgb(39, 45, 51);
+    --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
+    --PesquisarPagButton:rgb(31 31 45);
 }
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 
@@ -71,6 +63,9 @@ p{
     padding: 0;
     box-sizing: border-box;
 }
+.item{
+    width: calc(100% + 10px);
+    }
 /*Cabeçalho da página*/
 
 header{
@@ -96,7 +91,7 @@ header #Pesquisar{
 }
 #Pesquisar button{
     height: 100%;
-    width: 50px;
+    width: 4em;
     background-color: var(--AzulMuitoEscuroDestaque) ;
     border: none;
     color: var(--AmareloQueimado);
@@ -129,7 +124,6 @@ header #Pesquisar input{
     font-weight: bolder;
     font-size: 1.1rem;
 }
-
 
 .usuarioFoto{
     margin-right:15px;
@@ -169,7 +163,7 @@ header #escolhas{
     padding-bottom: 0.3%;
     padding-top: 0.3%;
     margin-top: 5px;
-    text-align: center
+    text-align: center;
 }
 /*Melhores Livros*/
 
@@ -179,28 +173,28 @@ header #escolhas{
     width: 100%;
     height: 100%;
     padding: 20px;
-    background: var(--PlanoDeFundoCarrosel)
+    background: var(--PlanoDeFundoCarrosel);
 }
 
 .melhores .item img{
     display: block;
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 .melhores .item{
     width: 20%;
-    margin: 10px 0.5vw 0 0;
+    margin: 10px 1.5vw 0px 1.5vw;
     padding: 14px;
 }
 
-/*Ordem dos itens*/
+/*Ordem e background dos seus itens*/
 .melhores #primeiro{
     background: rgb(255, 225, 55);
     order: 2;
 }
 .melhores #segundo{
     order: 1;
-    background: seashell;
+    background: rgb(255, 253, 251);
 }
 .melhores #terceiro{
     order: 3;
@@ -250,7 +244,7 @@ header #escolhas{
 }
 .box-carrosel{
     margin-top: 10px;
-    height: 400px;
+    height: 50vh;
     width: 300px;
     display: block;
     cursor: pointer;
@@ -266,10 +260,11 @@ header #escolhas{
     font-size: 1rem;
     background-color: var(--AzulMuitoEscuroDestaque);
     font-weight: bolder;
-    padding-top: 5px;
+    padding: 5px 8px 10px 8px;  
     overflow: auto;
     margin-bottom: 5px;
 }
+
 
 .item:hover img{
     padding:16px;
@@ -281,6 +276,7 @@ header #escolhas{
     color: var(--AzulMuitoEscuroDestaque);
     
 }
+
 
 /*Autores em rolagem*/
 

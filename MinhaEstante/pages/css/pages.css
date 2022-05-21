@@ -1,6 +1,7 @@
 /*VariÃ¡veis e imports*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 @import url(../../css/main.css);
+
 :root{
     /*Cores Usadas*/ 
     /*--AmareloQueimado:rgb(241, 196, 15);
@@ -12,18 +13,10 @@
     --PlanoDeFundoCarrosel: rgb(40, 41, 42); 
     --BordaBoxesCarrosel: rgb(191, 192, 193);  
     --TituloPlanoDeFundo: rgb(5, 18, 31); 
-    --AzulMuitoEscuroDestaque: rgb(39, 45, 51); */
-    /*AutalizaÃ§Ã£o*/
-    --AmareloQueimado:rgb(241, 196, 15);
-    --PretoPoucoEscuro:rgb(23, 32, 42) ;
-    --BrancoEscurecido: rgb(208, 211, 212);  
-    --HeaderPlanoDeFundo: rgb(0, 0, 35);
-    --PlanoDeFundoBody: rgb(41, 79, 79);
-    --LinkSelecionado: rgb(154, 125, 10); 
-    --PlanoDeFundoCarrosel: rgb(40, 41, 42); 
-    --BordaBoxesCarrosel: rgb(191, 192, 193);  
-    --TituloPlanoDeFundo: rgb(5, 18, 31); 
     --AzulMuitoEscuroDestaque: rgb(39, 45, 51);
+    --AzulMuitoEscuroDestaque: rgb(39, 45, 51);
+    --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
+    --PesquisarPagButton:rgb(31 31 45); */
 }
 /*Tags*/
 main >h1{
@@ -36,23 +29,19 @@ main >h1{
     padding: 4px;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-}
-
-
 /*main*/
 
 .corpo{
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-gap: 2vw;
+    align-items:center;
+    justify-items:center;
     background: linear-gradient(rgb(0,0,0,.5),rgb(0,0,0,.5) 100%),url(../img/outros/PlanoDefundo.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    padding: 30px 10% 30px 10%;
+    padding: 30px 10px 30px 10px;
     width: 100%;
     height: 100%;
 }
@@ -72,7 +61,7 @@ main{
 .livro-container p{
     padding-top: 10px;
     height: 10%;
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'Fjalla One', sans-serif;
     font-weight: bolder;
     overflow:hidden;
@@ -90,31 +79,78 @@ main{
 /*Selecionar a pagina*/
 
 section.selecionar-pag{
-    height: 150px;
-    width: calc(50% + 90px);
+    height: calc(100% + 30px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 10px;
-    margin: 10px 0px 0px 10px;
-    border-radius: 30%;
-    background-color: var(--PretoPoucoEscuro);
-    font-size: 2vw;
+    padding: 10px 0px 10px 0px;
+    margin-bottom:10px;
+    background-color: var(--PesquisarPagPlanoDeFundo);
     align-self: center;
 }
 .pag{
+    font-size: 3rem;
     color:var(--AmareloQueimado);    
 }
 .numero-pag, #ordem-pag{
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
+}
+
+.pesquisar-pag{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.selecionar-pag .leitor-pag{
+    font-size: 14px;
+    height: 34px;
+    width: 100%;    
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: solid rgb(0, 0, 35) 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pesquisar-pag button{
+    font-size:14px;
+    height: 34px;
+    width:3em;
+    background-color:var(--PesquisarPagButton);
+    border: none;
+    color: var(--AmareloQueimado);
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-left: 10px;
+}
+.selecionar-pag .botao-container{
+    display:flex;
+    width: 25%;
+    align-items:center;
+}
+.selecionar-pag .botao-container button{
+    background:var(--PesquisarPagButton);
+    border:0px;
+    border-radius:30%;
+    height: 30px;
+    width: calc(50% + 20px);
+    margin: 15px 10px 0px 10px;
+    padding:5px 0px 5px 0px;
+    font-size: 1.1em;
+    text-align:center;
+    font-family: 'Fjalla One', sans-serif;
+    color:var(--AmareloQueimado);
+}
+.selecionar-pag button:hover{
+    background: var(--AmareloQueimado);
+    color: var(--PesquisarPagButton);
 }
 
 /*footer*/
 
 footer{
     background-color: var(--HeaderPlanoDeFundo);
-    height: 40px;
-    width: 100%;    
 }

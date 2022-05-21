@@ -1,0 +1,126 @@
+/*imports e variaveis */
+@import url(./main.css);
+
+/*body / header / main / footer */
+
+header{
+    background: linear-gradient(to right, rgba(0,0,35,0.7), rgba(0,0,35,1));;
+}
+
+body{
+    text-align: left;
+    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)50%), url(https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_960_720.jpg);
+    background-position:center;
+    background-size: cover;
+    opacity: 50;    
+}
+
+/*Aba do Login*/
+#Login-Titulo{
+    text-align: center;
+    font-size: 30px;
+    color: #eee;
+}
+
+#Login-Section{
+    text-align: center;
+    padding: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    border-radius: 15px 50px 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: #eee;
+    top: -1px;
+    width: 400px;
+    height: calc(10rem + 140px);
+    margin: 0 auto;
+    background:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)50%),url(https://img.freepik.com/vetores-gratis/interior-antigo-luxo-da-biblioteca-a-noite-quarto-vazio-escuro-para-ler-com-livros-nas-prateleiras-de-madeira_107791-3025.jpg);
+  opacity: 1;
+  
+}
+
+.button {
+    background-color: #ffffff;
+  border: 2px solid #4CAF50;
+  color: rgb(0, 0, 0);
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  
+}
+input {
+    width: auto;
+}
+
+input[type=password]:focus{
+    border: 2px solid rgb(231, 180, 180);
+    border-radius: 4px;
+    background-color:lightblue;
+}
+input[type=email]:focus{
+    border: 2px  solid rgb(231, 180, 180);
+    border-radius: 4px;
+    background-color:lightblue;
+    
+}
+label {
+    color:#eee;
+    
+}
+.button:hover{
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 0.9;
+}
+
+div {
+    text-align: left;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    left: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  .dropdown-content a:hover {
+    background-color: #f1f1f1}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
