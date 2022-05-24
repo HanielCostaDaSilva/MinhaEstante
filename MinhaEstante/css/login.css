@@ -3,10 +3,6 @@
 
 /*body / header / main / footer */
 
-header{
-    background: linear-gradient(to right, rgba(0,0,35,0.7), rgba(0,0,35,1));;
-}
-
 body{
     text-align: left;
     background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)50%), url(https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_960_720.jpg);
@@ -14,12 +10,20 @@ body{
     background-size: cover;
     opacity: 50;    
 }
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5%;
+}
 
 /*Aba do Login*/
 #Login-Titulo{
     text-align: center;
     font-size: 30px;
+    margin-bottom:10px;
     color: #eee;
+    margin-left: 35px;
 }
 
 #Login-Section{
@@ -35,7 +39,7 @@ body{
     font-size: 14px;
     background-color: #eee;
     top: -1px;
-    width: 400px;
+    width: 450px;
     height: calc(10rem + 140px);
     margin: 0 auto;
     background:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)50%),url(https://img.freepik.com/vetores-gratis/interior-antigo-luxo-da-biblioteca-a-noite-quarto-vazio-escuro-para-ler-com-livros-nas-prateleiras-de-madeira_107791-3025.jpg);
@@ -43,7 +47,7 @@ body{
   
 }
 
-.button {
+#Login-Section .button {
     background-color: #ffffff;
   border: 2px solid #4CAF50;
   color: rgb(0, 0, 0);
@@ -58,8 +62,9 @@ body{
   transition-duration: 0.4s;
   
 }
-input {
+#Login-Section input {
     width: auto;
+    font-family: unset;
 }
 
 input[type=password]:focus{
@@ -73,20 +78,32 @@ input[type=email]:focus{
     background-color:lightblue;
     
 }
-label {
+#Login-Section label:nth-child(-n + 1) {    
+    padding: 8px;
+    border-radius:32%;
+    background: linear-gradient(to top, rgba(0,0,50,0.7), rgba(0,0,50,1));
+}
+#Login-Section label{
     color:#eee;
     
 }
-.button:hover{
-    background-color: #4CAF50;
+
+#Login-Section .button:hover{
+    background-color: #4dac51;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     opacity: 0.9;
 }
+/*Inputs*/
 
-div {
+#Login-Section .email, #Login-Section .senha {
     text-align: left;
 }
+.email input, .senha input{
+    height:2rem
+}
+
+/*DropButton e o seu conteudo*/
 .dropbtn {
     background-color: #4CAF50;
     color: white;
