@@ -1,5 +1,23 @@
-@media screen and (min-width: 768px) and  (max-width: 1024px) {
-  .melhores {
-    width: 3/5px;
+@media only screen and (max-device-width: 800px) {
+/* .menu { width:100%; } */
+}
+    *{
+        width:100%;
+    }
+    header .container{
+        width: fit-content;
+        flex-direction:collumn;
+    }
+    
+  .item{
+      margin-right:5px;
   }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  
+}
+
+@media screen and (min-with: 1024px) {
+  
 }

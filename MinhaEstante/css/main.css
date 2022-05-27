@@ -1,5 +1,6 @@
-/*Imports/ variaveis*/
 /*https://tailwindcss.com/docs/installation/using-postcss*/
+/*Imports/ variaveis*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 :root{
     /*cores*/
     --AmareloQueimado:rgb(241, 196, 15);
@@ -16,19 +17,23 @@
     --CinzaAzulado: rgb(39, 45, 51);
     --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
     --PesquisarPagButton:rgb(31 31 45);
+
+    /*fontes*/
+    --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --FjallaOne: 'Fjalla One', sans-serif;
+
 }
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 
 /*body header main footer*/
 
 body{
     background-color: var(--PlanoDeFundoBody);
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--FjallaOne);
 }
 
 main{
-    display:flex;
-    flex-direction:column;
+    width: 100%;
+    height:100%;
 }
 
 a, a:visited{
@@ -68,6 +73,7 @@ p{
     padding: 0;
     box-sizing: border-box;
 }
+
 .item, .item-livro{
     width: 15rem;
     margin:5px;
@@ -86,7 +92,7 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--FjallaOne);
     padding-bottom: 5px; 
 }
 .Inicial{
@@ -118,7 +124,7 @@ header #Pesquisar input{
     cursor: pointer;
     border-radius: 10px;
     padding-left: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--Franklin);;
 
 }
 
@@ -146,7 +152,7 @@ header .container th{
 .usuarioNome{
     font-size: 1.2rem;
     font-weight: lighter;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--FjallaOne);
 }
 /*Drop button*/
 .dropbtn{
@@ -178,7 +184,8 @@ header .container th{
   }
   .dropdown-content a:hover {
     background-color: #f1f1f1}
-  .dropdown:hover .dropdown-content {
+  
+.dropdown:hover .dropdown-content {
     display: block;
   }
 /*Escolhas*/
@@ -230,9 +237,13 @@ header #escolhas{
     height: 300px;
 }
 .melhores .item{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
     width: 20%;
     margin: 10px 1.5vw 0px 1.5vw;
     padding: 14px;
+    border-radius: 5%;
 }
 
 /*Ordem e background dos clasificados*/
@@ -271,7 +282,19 @@ header #escolhas{
     background:none;
       
 }
-
+/*Quantidade de favoritos*/
+.melhores .coracao{
+    color:rgb(216, 19, 19);
+}
+.melhores .coracao-quantidade{
+    font-family: var(--Franklin);
+    background: var(--AzulEscuroPlanoDeFundo);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15%;
+    color: white;
+    cursor: pointer;
+}
 /*Carrosel*/
 .carrosel{
     align-self:center;
@@ -305,7 +328,7 @@ header #escolhas{
     height:4.5rem;
     width: 100%;
     color: var(--AmareloQueimadoLetras);
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--FjallaOne);
     font-size: 1rem;
     background-color: var(--CinzaAzulado);
     font-weight: bolder;

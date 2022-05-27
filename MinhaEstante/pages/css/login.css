@@ -1,7 +1,10 @@
 /*imports e variaveis */
-@import url(./main.css);
+@import url(../../css/main.css);
 
 /*body / header / main / footer */
+header table{
+    font-size:1.5rem;
+}
 
 body{
     text-align: left;
@@ -11,9 +14,8 @@ body{
     opacity: 50;    
 }
 main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position:relative;
+    top:9rem;
     margin-top:5%;
 }
 
