@@ -1,6 +1,7 @@
 /*https://tailwindcss.com/docs/installation/using-postcss*/
 /*Imports/ variaveis*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
+@import url(./responsive.css);
 :root{
     /*cores*/
     --AmareloQueimado:rgb(241, 196, 15);
@@ -35,13 +36,16 @@ main{
     width: 100%;
     height:100%;
 }
-
-a, a:visited{
+/*tags*/
+h1{
+        margin:0;
+}
+button, .btn, a, a:visited{
     text-decoration: none;
     color: var(--AmareloQueimadoLetras);
 }
 
-a:hover{
+button, a:hover{
     color: var(--LinkSelecionado);
     cursor: pointer;   
 }
@@ -60,25 +64,21 @@ p{
     font-size: 1.2rem;
 }
 
-.container-col{
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    width: 100%;
-    height: 100%;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.item, .item-livro{
-    width: 15rem;
-    margin:5px;
-    }
-
+.hide{
+    display:none;
+}
+.container{
+    display:flex;
+    width: 100%;
+    max-width: 100%;
+    
+}
 
 /*Cabeçalho da página*/
 
@@ -89,21 +89,23 @@ header{
     height: fit-content;
 }
 header .container{
-    display: flex;
-    align-items: center;
+    align-items: baseline;
+    padding: 0px 10px 0px 10px ;
     justify-content: space-between;
     font-family: var(--FjallaOne);
     padding-bottom: 5px; 
 }
+
 .Inicial{
-    font-size: 30px;
+    font-size: 2.5rem;
     cursor:default;
 }
 header #Pesquisar{
     flex-direction: row-reverse;
-    height: 60px;
+    height: 7vh;
+    width:100%;
 }
-#Pesquisar button, .dropbtn{
+header button{
     height: 100%;
     width: 4em;
     background-color: var(--CinzaAzulado) ;
@@ -113,7 +115,7 @@ header #Pesquisar{
     margin-left: 5px;
 
 }
-#Pesquisar button:hover, .dropdown:hover .dropbtn{
+header button:hover{
     background-color: var(--AmareloQueimado);
     color: white;
     cursor: pointer;
@@ -121,6 +123,7 @@ header #Pesquisar{
 header #Pesquisar input{
     font-size: 14px;
     height: 100%;
+    width:inherit;
     cursor: pointer;
     border-radius: 10px;
     padding-left: 15px;
@@ -135,7 +138,6 @@ header .container th{
 .usuario{
     height: fit-content;
     margin-right:20px;
-    
     padding: 10px;
 }
 .usuario:hover .usuarioNome{
@@ -167,7 +169,7 @@ header .container th{
     display: inline-block;
     left: 0;
   }
-  .dropdown-content {
+  .dropdown-content{
     display: none;
     position: fixed;
     background-color: #f9f9f9;
@@ -175,7 +177,7 @@ header .container th{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  .dropdown-content a {
+  .dropdown-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -190,23 +192,18 @@ header .container th{
   }
 /*Escolhas*/
 
-header #escolhas{
-    width: 100%;
+#escolhas{
     padding-top: 10px;
     font-size: 30px;
     padding: 5px;
 }
-
 #escolhas a{
-    background-color: rgb(26, 42, 61);
-    width: 30%;
-    height: 100%;
-    text-align: center;
-    margin: 10px;
+    width:100%;
+    
+    margin: 0px 10px 0px 10px;
 }
-#escolhas a:hover{
-    color: rgb(26, 42, 61);
-    background-color: var(--AmareloQueimado);
+#escolhas .btn{
+    width: 27rem;
 }
 
 /*Titulos*/
@@ -223,8 +220,8 @@ header #escolhas{
 /*Melhores Livros*/
 
 .melhores{
-    display: flex;
     justify-content: space-evenly;
+    margin:0;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -237,6 +234,7 @@ header #escolhas{
     height: 300px;
 }
 .melhores .item{
+    position:relative;
     display: flex;
     flex-direction:column;
     justify-content:space-between;
@@ -283,10 +281,14 @@ header #escolhas{
       
 }
 /*Quantidade de favoritos*/
-.melhores .coracao{
+
+.coracao{
     color:rgb(216, 19, 19);
 }
-.melhores .coracao-quantidade{
+
+.coracao-quantidade{
+    position:absolute;
+    right:0vw;
     font-family: var(--Franklin);
     background: var(--AzulEscuroPlanoDeFundo);
     text-align: center;
@@ -295,31 +297,36 @@ header #escolhas{
     color: white;
     cursor: pointer;
 }
+
+/*Item*/
+.item{
+    width: 100%;
+    margin:5px;
+    position:relative;
+}
 /*Carrosel*/
+
 .carrosel{
     align-self:center;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
     height: 100%;
     width: 100%;
     background-color: var(--PlanoDeFundoCarrosel);
     padding: 20px;
-
-
 }
-.carrossel:first-child{
-    max-height: 500px;
-    min-height: 400px;
+.carrossel-button{
+    margin:-22%;
 }
-
 .box-carrosel{
     margin-top: 10px;
     display: block;
     cursor: pointer;
     background: var(--CinzaAzulado);
+    height:450px;
+    width:100%;
 }
-.item-livro .box-carrosel{
-    height:100%
-}
-
 .item p{
     display:flex;
     align-items: center;
@@ -349,15 +356,14 @@ header #escolhas{
     
 }
 
-
 /*Autores em rolagem*/
 
 .carrosel-Autores .item{
     background: var(--CinzaAzulado);
 }
 .box-autores{
-    width: 15vw;
-    height: 17vw;
+    width: 100%;
+    height: 300px;
 }
 
 /*rodapé*/
