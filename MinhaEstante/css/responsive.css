@@ -48,18 +48,15 @@
     #pesquisar button{
         width: 40%;
     }
-    #escolhas{
-        display:flex;
-        align-items: center;
-    }
     #escolhas a{
         margin:20px;
-        width:100%;
         border-radius: 5%;
     }
     .melhores{
         display:grid;
         grid-template-columns:5fr;
+        justify-items: center;
+        align-items: center;
     }
     .usuario{
         display:none;
@@ -75,10 +72,17 @@
   .melhores .item{
       width:300px;
   }
-    
-    .box-autores{
-        height:300px;
+  /*
+  .carrosel{
+      height: 300px;
+  }*/
+    .carousel-item{
+      width: 50vw;
+      height: 100%;
+      
     }
-
+    .carousel-item img{
+        height: 20rem;
+    }
   
 }

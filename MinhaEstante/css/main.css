@@ -5,19 +5,23 @@
 :root{
     /*cores*/
     --AmareloQueimado:rgb(241, 196, 15);
-    --AmareloQueimadoLetras:rgb(251, 195, 20);
     --PretoPoucoEscuro:rgb(23, 32, 42);
     --BrancoEscurecido: rgb(208, 211, 212);  
-    --HeaderPlanoDeFundo: linear-gradient(to left, rgba(0,0,50,1), rgba(0,0,25,1));
-    --AzulEscuroPlanoDeFundo: rgb(0, 0, 35);
-    --PlanoDeFundoBody: rgb(87, 88, 88);
-    --LinkSelecionado: rgb(154, 125, 10); 
-    --PlanoDeFundoCarrosel: rgb(40, 41, 42); 
-    --BordaBoxesCarrosel: rgb(191, 192, 193);  
-    --TituloPlanoDeFundo: rgb(5, 18, 31); 
     --CinzaAzulado: rgb(39, 45, 51);
+
+    --AzulEscuroPlanoDeFundo: rgb(0, 0, 35);
+    --AmareloQueimadoLetras:rgb(251, 195, 20);
+    --LinkSelecionado: rgb(154, 125, 10); 
     --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
     --PesquisarPagButton:rgb(31 31 45);
+
+    --HeaderPlanoDeFundo:linear-gradient(143deg, rgba(2,4,27,1) 0%, rgba(6,10,31,1) 49%, rgba(0,9,10,1) 100%);
+    --PlanoDeFundoCarrosel: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(87,88,88,1) 50%, rgba(0,0,0,1) 100%);
+
+    --BordaBoxesCarrosel: rgb(191, 192, 193);  
+    --TituloPlanoDeFundo: radial-gradient(circle, rgba(9,6,59,1) 0%, rgba(4,4,25,1) 54%, rgba(5,21,24,1) 100%);
+    --PlanoDeFundoBody:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,27,1) 99%);
+    --FooterPlanoDeFundo:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,45,1) 99%);
 
     /*fontes*/
     --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -28,7 +32,7 @@
 /*body header main footer*/
 
 body{
-    background-color: var(--PlanoDeFundoBody);
+    background: var(--PlanoDeFundoBody);
     font-family: var(--FjallaOne);
 }
 
@@ -36,10 +40,23 @@ main{
     width: 100%;
     height:100%;
 }
+footer{
+    height: 5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    background:var(--FooterPlanoDeFundo);
+
+}
 /*tags*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 h1{
         margin:0;
 }
+
 button, .btn, a, a:visited{
     text-decoration: none;
     color: var(--AmareloQueimadoLetras);
@@ -49,12 +66,14 @@ button, a:hover{
     color: var(--LinkSelecionado);
     cursor: pointer;   
 }
+
 ul{
     list-style: none;
 }
+
 ul li{
     display: inline-block;
-    text-align: center
+    text-align: center;
 }
 
 p{
@@ -62,13 +81,12 @@ p{
     color: var(--AmareloQueimadoLetras);
     font-weight: bolder;
     font-size: 1.2rem;
+    margin: 0;
+}
+p, h1,h2,h3,h4,h5,h6, span, a{
+    cursor:default;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .hide{
     display:none;
@@ -77,6 +95,8 @@ p{
     display:flex;
     width: 100%;
     max-width: 100%;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -87,10 +107,10 @@ header{
     padding-bottom: 10px;
     background: var(--HeaderPlanoDeFundo);
     height: fit-content;
-}
-header .container{
-    align-items: baseline;
     padding: 0px 10px 0px 10px ;
+}
+header > .container{
+    align-items: baseline;
     justify-content: space-between;
     font-family: var(--FjallaOne);
     padding-bottom: 5px; 
@@ -100,15 +120,16 @@ header .container{
     font-size: 2.5rem;
     cursor:default;
 }
+
 header #Pesquisar{
     flex-direction: row-reverse;
-    height: 7vh;
+    height: 60px;
     width:100%;
 }
 header button{
     height: 100%;
     width: 4em;
-    background-color: var(--CinzaAzulado) ;
+    background: var(--CinzaAzulado) ;
     border: none;
     color: var(--AmareloQueimadoLetras);
     border-radius: 10px;
@@ -116,7 +137,7 @@ header button{
 
 }
 header button:hover{
-    background-color: var(--AmareloQueimado);
+    background: var(--AmareloQueimado);
     color: white;
     cursor: pointer;
 }
@@ -141,9 +162,7 @@ header .container th{
     padding: 10px;
 }
 .usuario:hover .usuarioNome{
-    color: var(--AmareloQueimado);
     font-weight: bolder;
-    font-size: 1.1rem;
 }
 
 .usuarioFoto{
@@ -172,7 +191,7 @@ header .container th{
   .dropdown-content{
     display: none;
     position: fixed;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -185,7 +204,7 @@ header .container th{
     
   }
   .dropdown-content a:hover {
-    background-color: #f1f1f1}
+    background: #f1f1f1}
   
 .dropdown:hover .dropdown-content {
     display: block;
@@ -193,24 +212,27 @@ header .container th{
 /*Escolhas*/
 
 #escolhas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 10px;
     font-size: 30px;
     padding: 5px;
 }
 #escolhas a{
-    width:100%;
-    
+    width:10%;
+    width: fit-content;
     margin: 0px 10px 0px 10px;
 }
 #escolhas .btn{
-    width: 27rem;
+    width: 100%;
+    margin: 0px 5% 0px 5%; 
 }
-
 /*Titulos*/
 
 .titulo{
     font-size: 2rem;
-    background-color: var(--TituloPlanoDeFundo);
+    background: var(--TituloPlanoDeFundo);
     color: var(--AmareloQueimadoLetras);
     padding-bottom: 0.3%;
     padding-top: 0.3%;
@@ -238,35 +260,40 @@ header .container th{
     display: flex;
     flex-direction:column;
     justify-content:space-between;
-    width: 20%;
+    width: 50%;
     margin: 10px 1.5vw 0px 1.5vw;
     padding: 14px;
     border-radius: 5%;
 }
 
 /*Ordem e background dos clasificados*/
-.melhores #primeiro, .melhores #primeiro:hover img {
+.melhores #primeiro{
     background: linear-gradient(to top, rgba(255, 225, 55, 1), rgba(255, 255, 255, 1));
     order: 2;
 }
-.melhores #segundo, .melhores #segundo:hover img{
+.melhores #segundo{
     order: 1;
     background: linear-gradient(to top, rgba(211, 211, 211,1), rgba(255,255,255,1));
 }
-.melhores #terceiro, .melhores #terceiro:hover img{
+.melhores #terceiro{
     order: 3;
     background: linear-gradient(to top,rgb(65, 26, 26,1),rgb(163, 162, 165,1));
 }
-.melhores #quarto, .melhores #quarto:hover img{
+.melhores #quarto{
     order: 0;
     background: linear-gradient(to top, rgb(28, 29, 34,1), rgb(56, 58, 66,1));
 }
-.melhores #quinto, .melhores #quinto:hover img{
+.melhores #quinto{
     order: 4;
     background: linear-gradient(to top, rgba(17, 17, 112,1),rgba(88, 88, 156,1));
 }
 /*Cores das .box-livros quando o mouse está em cima*/
+.melhores .item:hover img{
+    background: none;
+
+}
 /*cores dos parágrafos*/
+
 #primeiro p,#terceiro p,#quarto p,#quinto p, #segundo p{
     color: rgb(22, 160, 133);
       
@@ -300,20 +327,21 @@ header .container th{
 
 /*Item*/
 .item{
-    width: 100%;
-    margin:5px;
     position:relative;
+}
+.active{
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    width:30vw;
 }
 /*Carrosel*/
 
 .carrosel{
     align-self:center;
     display:flex;
-    justify-content:center;
-    align-items:center; 
+
     height: 100%;
     width: 100%;
-    background-color: var(--PlanoDeFundoCarrosel);
+    background: var(--PlanoDeFundoCarrosel);
     padding: 20px;
 }
 .carrossel-button{
@@ -337,7 +365,7 @@ header .container th{
     color: var(--AmareloQueimadoLetras);
     font-family: var(--FjallaOne);
     font-size: 1rem;
-    background-color: var(--CinzaAzulado);
+    background: var(--CinzaAzulado);
     font-weight: bolder;
     padding: 5px 8px 10px 8px;  
     overflow: auto;
@@ -351,27 +379,18 @@ header .container th{
 }
 
 .item:hover p{
-    background-color: var(--AmareloQueimado);
+    background: var(--AmareloQueimado);
     color: var(--CinzaAzulado);
     
 }
 
 /*Autores em rolagem*/
 
-.carrosel-Autores .item{
-    background: var(--CinzaAzulado);
-}
 .box-autores{
-    width: 100%;
-    height: 300px;
+    height: 50vh;
 }
 
 /*rodapé*/
-
-footer{
-    padding-top: 10px;
-    background-color: var(--PretoPoucoEscuro);
-}
 
 /*<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

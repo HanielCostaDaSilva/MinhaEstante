@@ -1,23 +1,6 @@
 /*VariÃ¡veis e imports*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 @import url(../../css/main.css);
-
-:root{
-    /*Cores Usadas*/ 
-    /*--AmareloQueimado:rgb(241, 196, 15);
-    --PretoPoucoEscuro:rgb(23, 32, 42) ;
-    --BrancoEscurecido: rgb(208, 211, 212);  
-    --HeaderPlanoDeFundo: rgb(0, 0, 35);
-    --PlanoDeFundoBody: rgb(87, 88, 88);
-    --LinkSelecionado: rgb(154, 125, 10); 
-    --PlanoDeFundoCarrosel: rgb(40, 41, 42); 
-    --BordaBoxesCarrosel: rgb(191, 192, 193);  
-    --TituloPlanoDeFundo: rgb(5, 18, 31); 
-    --AzulMuitoEscuroDestaque: rgb(39, 45, 51);
-    --AzulMuitoEscuroDestaque: rgb(39, 45, 51);
-    --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
-    --PesquisarPagButton:rgb(31 31 45); */
-}
 /*Tags*/
 main >h1{
     font-family: 'Fjalla One', sans-serif;
@@ -25,7 +8,7 @@ main >h1{
     font-weight: bolder;
     text-align: center;
     color: var(--AmareloQueimado);
-    background-color: var(--TituloPlanoDeFundo);
+    background: var(--TituloPlanoDeFundo);
     padding: 4px;
 }
 
