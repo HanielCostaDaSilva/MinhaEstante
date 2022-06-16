@@ -72,17 +72,13 @@
   .melhores .item{
       width:300px;
   }
-  /*
-  .carrosel{
-      height: 300px;
-  }*/
-    .carousel-item{
-      width: 50vw;
-      height: 100%;
-      
+    
+    .carousel-inner{
+        height:50vh;
     }
-    .carousel-item img{
-        height: 20rem;
+    .carousel-item{
+      width: fit-content;
+      height: 400px;  
     }
   
 }

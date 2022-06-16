@@ -1,3 +1,226 @@
-.container {
-  
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
+@import url(./responsive.css);
+
+:root{
+  /*Cores*/
+    --AmareloQueimado:rgb(241, 196, 15);
+    --PretoPoucoEscuro:rgb(23, 32, 42);
+    --BrancoEscurecido: rgb(208, 211, 212);  
+    --CinzaAzulado: rgb(39, 45, 51);
+
+    --AzulEscuroPlanoDeFundo: rgb(0, 0, 35);
+    --AmareloQueimadoLetras:rgb(251, 195, 20);
+    --LinkSelecionado: rgb(154, 125, 10); 
+    --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
+    --PesquisarPagButton:rgb(31 31 45);
+
+    --HeaderPlanoDeFundo:linear-gradient(143deg, rgba(2,4,27,1) 0%, rgba(6,10,31,1) 49%, rgba(0,9,10,1) 100%);
+    --PlanoDeFundoCarrosel: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(87,88,88,1) 50%, rgba(0,0,0,1) 100%);
+
+    --BordaBoxesCarrosel: rgb(191, 192, 193);  
+    --TituloPlanoDeFundo: radial-gradient(circle, rgba(9,6,59,1) 0%, rgba(4,4,25,1) 54%, rgba(5,21,24,1) 100%);
+    --PlanoDeFundoBody:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,27,1) 99%);
+    --FooterPlanoDeFundo:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,45,1) 99%);
+  /*Fontes*/
+      --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --FjallaOne: 'Fjalla One', sans-serif;
 }
+
+html, body {
+  padding-bottom: 400px;
+}
+
+/*body header main footer*/
+
+body{
+    background: var(--PlanoDeFundoBody);
+    font-family: var(--FjallaOne);
+}
+
+main{
+    width: 100%;
+    height:100%;
+}
+footer{
+    height: 5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    background:var(--FooterPlanoDeFundo);
+
+}
+/*tags*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, .btn, a, a:visited{
+    text-decoration: none;
+    color: var(--AmareloQueimadoLetras);
+}
+
+button,a:hover{
+    color: var(--LinkSelecionado);
+    cursor: pointer;
+    background: rgb(3 9 21);
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--AmareloQueimadoLetras);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 0;
+}
+p, h1,h2,h3,h4,h5,h6, span,a, a:hover{
+    cursor:default;
+    background:none;
+    margin:0;
+}
+
+
+.hide{
+    display:none;
+}
+
+.container{
+    display:flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Cabeçalho da página*/
+
+header{
+    color: var(--AmareloQueimadoLetras);
+    padding-bottom: 10px;
+    background: var(--HeaderPlanoDeFundo);
+    height: fit-content;
+    padding: 0px 10px 0px 10px ;
+}
+header > .container{
+    padding-bottom: 5px;
+    border-bottom: 5px dashed rgb(33, 47, 61);
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    align-items: center;
+}
+}
+
+.Inicial{
+    font-size: 2.5rem;
+    cursor:default;
+}
+
+header #Pesquisar{
+    /*margin:0 25% 0 25%;*/
+    flex-direction: row-reverse;
+    height: 60px;
+    width:100%;
+}
+header button{
+    height: 100%;
+    width: 4em;
+    background: rgb(3 9 21);
+    border: none;
+    color: var(--AmareloQueimadoLetras);
+    border-radius: 10px;
+    margin-left: 5px;
+
+}
+header button:hover{
+    background: var(--AmareloQueimado);
+    color: white;
+    cursor: pointer;
+}
+header #Pesquisar input{
+    font-size: 14px;
+    height: 100%;
+    width:inherit;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-family: var(--Franklin);;
+
+}
+
+header .container th{
+    padding: 20px;
+    text-align:center;
+}
+/*usuário*/
+.usuario{
+    width:50%;
+    height: fit-content;
+    margin-right:20px;
+    padding: 10px;
+}
+.usuario:hover .usuarioNome{
+    margin:0;
+    font-weight: bolder;
+}
+
+.usuarioFoto{
+    margin-right:15px;
+    height:63px;
+    width:60px;
+}
+.usuarioNome{
+    width:calc(fit-content);
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family: var(--FjallaOne);
+}
+/*Drop button*/
+.dropelon:hover {
+    background: black;    
+}
+
+.dropbtn{
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: black;
+    
+  }
+  .dropdown{
+    position: relative;
+    display: inline-block;
+    left: 0;
+      
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background: #05081e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  .dropdown-content a:hover {
+    background: #212121}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }

@@ -11,6 +11,18 @@ main >h1{
     background: var(--TituloPlanoDeFundo);
     padding: 4px;
 }
+/*header*/
+header{
+    position:sticky;
+    align-items: baseline;
+    justify-content: center;
+    font-family: var(--FjallaOne);
+    padding-bottom: 5px; 
+
+}
+.Inicial{
+    font-size: 2rem;
+}
 
 /*main*/
 

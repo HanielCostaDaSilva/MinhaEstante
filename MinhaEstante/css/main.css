@@ -53,18 +53,16 @@ footer{
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-        margin:0;
-}
 
 button, .btn, a, a:visited{
     text-decoration: none;
     color: var(--AmareloQueimadoLetras);
 }
 
-button, a:hover{
+button,a:hover{
     color: var(--LinkSelecionado);
-    cursor: pointer;   
+    cursor: pointer;
+    background: rgb(3 9 21);
 }
 
 ul{
@@ -76,6 +74,10 @@ ul li{
     text-align: center;
 }
 
+h1 {
+  color: var(--AmareloQueimadoLetras);
+}
+
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--AmareloQueimadoLetras);
@@ -83,14 +85,17 @@ p{
     font-size: 1.2rem;
     margin: 0;
 }
-p, h1,h2,h3,h4,h5,h6, span, a{
+p, h2,h3,h4,h5,h6, span,a, a:hover{
     cursor:default;
+    background:none;
+    margin:0;
 }
 
 
 .hide{
     display:none;
 }
+
 .container{
     display:flex;
     width: 100%;
@@ -110,10 +115,12 @@ header{
     padding: 0px 10px 0px 10px ;
 }
 header > .container{
-    align-items: baseline;
-    justify-content: space-between;
-    font-family: var(--FjallaOne);
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
+    border-bottom: 5px dashed rgb(33, 47, 61);
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    align-items: center;
+}
 }
 
 .Inicial{
@@ -122,6 +129,7 @@ header > .container{
 }
 
 header #Pesquisar{
+    /*margin:0 25% 0 25%;*/
     flex-direction: row-reverse;
     height: 60px;
     width:100%;
@@ -129,7 +137,7 @@ header #Pesquisar{
 header button{
     height: 100%;
     width: 4em;
-    background: var(--CinzaAzulado) ;
+    background: rgb(3 9 21);
     border: none;
     color: var(--AmareloQueimadoLetras);
     border-radius: 10px;
@@ -153,58 +161,68 @@ header #Pesquisar input{
 }
 
 header .container th{
-    padding: 20px;    
+    padding: 20px;
+    text-align:center;
 }
 /*usuário*/
 .usuario{
+    width:50%;
     height: fit-content;
     margin-right:20px;
     padding: 10px;
 }
 .usuario:hover .usuarioNome{
+    margin:0;
     font-weight: bolder;
 }
 
 .usuarioFoto{
     margin-right:15px;
-    height:55px;
-    width:50px;
+    height:63px;
+    width:60px;
 }
 .usuarioNome{
+    width:calc(fit-content);
     font-size: 1.2rem;
     font-weight: lighter;
     font-family: var(--FjallaOne);
 }
 /*Drop button*/
+.dropelon:hover {
+    background: black;    
+}
+
 .dropbtn{
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    background: black;
     
   }
   .dropdown{
     position: relative;
     display: inline-block;
     left: 0;
+      
   }
   .dropdown-content{
     display: none;
-    position: fixed;
-    background: #f9f9f9;
+    position: absolute;
+    background: #05081e;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   .dropdown-content a{
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     
   }
   .dropdown-content a:hover {
-    background: #f1f1f1}
+    background: #212121}
   
 .dropdown:hover .dropdown-content {
     display: block;
@@ -214,19 +232,17 @@ header .container th{
 #escolhas{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    font-size: 30px;
+    justify-content: space-evenly;
+    font-size: 3rem;
     padding: 5px;
 }
 #escolhas a{
-    width:10%;
+    /*margin:0 10px 0px 10px;*/
     width: fit-content;
-    margin: 0px 10px 0px 10px;
 }
 #escolhas .btn{
-    width: 100%;
-    margin: 0px 5% 0px 5%; 
+    width: 20rem;
+    /*margin: 0px 5% 0px 5%; */
 }
 /*Titulos*/
 
@@ -288,9 +304,8 @@ header .container th{
     background: linear-gradient(to top, rgba(17, 17, 112,1),rgba(88, 88, 156,1));
 }
 /*Cores das .box-livros quando o mouse está em cima*/
-.melhores .item:hover img{
+.item:hover img{
     background: none;
-
 }
 /*cores dos parágrafos*/
 
@@ -344,14 +359,20 @@ header .container th{
     background: var(--PlanoDeFundoCarrosel);
     padding: 20px;
 }
+.carrosel .item{
+    width:fit-content;
+    padding:5px;
+    background:var(--AzulEscuroPlanoDeFundo);
+    border-radius:5%;
+}
 .carrossel-button{
     margin:-22%;
 }
+
 .box-carrosel{
     margin-top: 10px;
     display: block;
     cursor: pointer;
-    background: var(--CinzaAzulado);
     height:450px;
     width:100%;
 }
@@ -365,7 +386,6 @@ header .container th{
     color: var(--AmareloQueimadoLetras);
     font-family: var(--FjallaOne);
     font-size: 1rem;
-    background: var(--CinzaAzulado);
     font-weight: bolder;
     padding: 5px 8px 10px 8px;  
     overflow: auto;
@@ -375,19 +395,19 @@ header .container th{
 
 .item:hover img{
     padding:16px;
-    background: var(--AmareloQueimado);
+    background:none;
 }
 
 .item:hover p{
-    background: var(--AmareloQueimado);
-    color: var(--CinzaAzulado);
+    font-weight:bolder;
+    background:none;
     
 }
 
 /*Autores em rolagem*/
-
 .box-autores{
-    height: 50vh;
+    height: calc(30vh + 2rem);
+    width: calc(30vw + 2rem);
 }
 
 /*rodapé*/
