@@ -2,46 +2,96 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/f64e76efbd.js" crossorigin="anonymous"></script>
-    <link href="MinhaEstante/pages/css/login.css" rel="stylesheet"/> 
-    <link rel="shortcut icon" href="MinhaEstante/icones/favicon.ico">
-    <title>Minha Estante</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/favicon.ico">
+    <link href="MinhaEstante/pages/css/login.css" rel="stylesheet"/>
+    <link rel="icon" type="imagem/png" href="MinhaEstante/icones/book-open-reader-solid.svg" />
+    <title >Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f64e76efbd.js" crossorigin="anonymous" font-size:></script>
 </head>
 <body>
-     <header>
-            <div class="container" style="padding:10px 0px 10px 20px;">        
-                <h1 class="Inicial"> <i class="fa-solid fa-book-open-reader"></i></i> Minha Estante</h1>
-                <table>
-                    <tr> <th><a>Cadastrar-se</a></th> <th><a>Sobre nós</a></th> </tr>
-                </table>
-            </div>
-    </header>
-    <main>
-   
-  
-    <section id="Login-Section">
+    <tr> <th><div class="dropdown">
+  <button class="dropbtn">Sobre Nós</button>
+  <div class="dropdown-content">
+    <a href="https://www.instagram.com/haniel__costa/">@HanieldoGrau</a>
+    <a href="https://www.instagram.com/allan_smith_pb/">@Allanzinhodogera</a>
+    <a href="https://www.instagram.com/imamarcio/">@MárcioPressaum</a>
+  </div>
+</div></th> </tr>
+  <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
+  <div class="max-w-md w-full space-y-8 principal">
+    <div id="CaixaComIcone">
+      <i id="Icone"class="fa-solid fa-book-open-reader"></i></h2>
+<!--       <p class="mt-2 text-center text-sm text-gray-600">
+        ou
+        <a href="#" class="font-medium text-yellow-500 hover:text-gray-300"> Os primeiros 10 dias são grátis! </a>
+      </p> -->
+    </div>
+    <form class="mt-8 space-y-6" action="MinhaEstante/index.html" method="POST">
+      <input type="hidden" name="remember" value="true">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="email-address" class="sr-only">E-mail</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-yellow-500 focus:z-10 sm:text-sm" placeholder="nome@email.com">
+        </div>
+        <div>
+          <label for="password" class="sr-only">Senha</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-yellow-500 focus:z-10 sm:text-sm" placeholder="senha">
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-yellow-300 rounded">
+          <label for="remember-me" class="ml-2 block text-sm text-yellow-500"> Lembre-me </label>
+        </div>
+
+        <div class="text-sm">
+          <a href="#" class="font-medium text-yellow-500 hover:text-gray-500"> Esqueceu a senha? </a>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-yellow-500 bg-blue-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <!-- Heroicon name: solid/lock-closed -->
+            <svg class="h-5 w-5 text-yellow-500 group-hover:text-yellow-500" lns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+           
+          Cadastre-se
+        </button>
+          <p class="mt-2 text-center text-sm text-yellow-600">
+        ou
+        
+      </p>
+          <div class="content">
+              <div>
+                  <a href="MinhaEstante/index.html"> <button>
+           <i id="social"class="fa-brands fa-google"></i></button> </a></div>
+              
+        <button>
+            <i id="social"class="fa-brands fa-facebook"></i></button>
+        <button>
+            <i id="social"
+                class="fa-brands fa-twitter"></i>
+        </button>
+        </div>
+      </div>
+       
+        
+    </form>
+  </div>
       
-        <h1 id="Login-Titulo"> BEM-VINDO!</h1>
-        <div class="email">
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" placeholder="Digite seu email">
-        </div>
-        <div class="senha">
-            <label for="password">Senha:</label>
-            <input type="password" name="password" placeholder="Digite sua senha">
-        </div>  
-        <div>
-            <input type="checkbox" name="termos" value="ok" id="termos">
-            <label for="termos">Aceitas os <a href='https://www.administrefacil.com.br/images/modelos/400x500/82-bb2cb4e9699d9bc767c869cdb34f3e7e.gif'>termos de resposabilidade...</a></label>
-        </div>
-        <div>
-            <button class="button" type="button" onclick="window.location.href='MinhaEstante/index.html'">Continue</button>
-            </a> 
-        </div>
-    </section>
-    </main>
+</div>
+    
+    <header>
+        
+        
+
+  
     
 </body>
 </html>

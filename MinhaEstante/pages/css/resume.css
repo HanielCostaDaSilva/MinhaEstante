@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
-@import url(./responsive.css);
+@import url(../../css/responsive.css);
+@import url(../css/pages.css);
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
+@import url(../../css/responsive.css);
+@import url(../css/pages.css);
 
 :root{
-  /*Cores*/
+    /*cores*/
+    --CorDaSection: rgb(174, 182, 191);
+    --PreviaPlanoDeFundo: rgb(120, 120, 100);
+    --CorSectionMaisDestaque rgb(106, 115, 124);
+
+
+
+    
     --AmareloQueimado:rgb(241, 196, 15);
     --PretoPoucoEscuro:rgb(23, 32, 42);
     --BrancoEscurecido: rgb(208, 211, 212);  
@@ -21,38 +32,10 @@
     --TituloPlanoDeFundo: radial-gradient(circle, rgba(9,6,59,1) 0%, rgba(4,4,25,1) 54%, rgba(5,21,24,1) 100%);
     --PlanoDeFundoBody:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,27,1) 99%);
     --FooterPlanoDeFundo:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,45,1) 99%);
-  /*Fontes*/
-      --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /*fontes*/
+    --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --FjallaOne: 'Fjalla One', sans-serif;
-}
-
-html, body {
-  padding-bottom: 400px;
-}
-
-/*body header main footer*/
-
-body{
-    background: var(--PlanoDeFundoBody);
-    font-family: var(--FjallaOne);
-}
-
-main{
-    width: 100%;
-    height:100%;
-}
-footer{
-    height: 5rem;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    background:var(--FooterPlanoDeFundo);
-
-}
-/*tags*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 button, .btn, a, a:visited{
@@ -60,69 +43,10 @@ button, .btn, a, a:visited{
     color: var(--AmareloQueimadoLetras);
 }
 
-button,a:hover{
+button, a:hover {
     color: var(--LinkSelecionado);
     cursor: pointer;
     background: rgb(3 9 21);
-}
-
-ul{
-    list-style: none;
-}
-
-ul li{
-    display: inline-block;
-    text-align: center;
-}
-
-p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--AmareloQueimadoLetras);
-    font-weight: bolder;
-    font-size: 1.2rem;
-    margin: 0;
-}
-p, h1,h2,h3,h4,h5,h6, span,a, a:hover{
-    cursor:default;
-    background:none;
-    margin:0;
-}
-
-
-.hide{
-    display:none;
-}
-
-.container{
-    display:flex;
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-/*Cabeçalho da página*/
-
-header{
-    color: var(--AmareloQueimadoLetras);
-    padding-bottom: 10px;
-    background: var(--HeaderPlanoDeFundo);
-    height: fit-content;
-    padding: 0px 10px 0px 10px ;
-}
-header > .container{
-    padding-bottom: 5px;
-    border-bottom: 5px dashed rgb(33, 47, 61);
-    display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
-    align-items: center;
-}
-}
-
-.Inicial{
-    font-size: 2.5rem;
-    cursor:default;
 }
 
 header #Pesquisar{
@@ -153,74 +77,42 @@ header #Pesquisar input{
     cursor: pointer;
     border-radius: 10px;
     padding-left: 15px;
-    font-family: var(--Franklin);;
-
+    font-family: var(--Franklin);
 }
 
-header .container th{
-    padding: 20px;
-    text-align:center;
-}
-/*usuário*/
-.usuario{
-    width:50%;
-    height: fit-content;
-    margin-right:20px;
-    padding: 10px;
-}
-.usuario:hover .usuarioNome{
-    margin:0;
-    font-weight: bolder;
+footer{
+    height: 5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    background:var(--FooterPlanoDeFundo);
 }
 
-.usuarioFoto{
-    margin-right:15px;
-    height:63px;
-    width:60px;
-}
-.usuarioNome{
-    width:calc(fit-content);
-    font-size: 1.2rem;
-    font-weight: lighter;
-    font-family: var(--FjallaOne);
-}
-/*Drop button*/
-.dropelon:hover {
-    background: black;    
+h4 {
+  color: var(--AmareloQueimado);
 }
 
-.dropbtn{
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background: black;
-    
-  }
-  .dropdown{
-    position: relative;
-    display: inline-block;
-    left: 0;
-      
-  }
-  .dropdown-content{
-    display: none;
-    position: absolute;
-    background: #05081e;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a{
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    
-  }
-  .dropdown-content a:hover {
-    background: #212121}
+ul > li {
+  display: flex;
+  font-size: 16px;
+  color: var(--AmareloQueimado);
+  justify-content: flex-start;
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+}
+
+#Previa{
+    flex-grow:3;
+    flex-direction: column;
+    background: var(--PreviaPlanoDeFundo);
+}
+#Corpo{
+    flex-basis: max-content;
+    flex-direction: column;
+}
+
+.sobre {
   
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
+}

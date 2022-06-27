@@ -5,10 +5,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icones/favicon.ico">
     <title>Minha Estante</title>
+        <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 <body>
     <header>
@@ -47,122 +48,116 @@
     </header>
     
     <main>
-    <h1 class="titulo" id="Novidades"> NOVIDADES</h1>
-    <div class="container   carrosel carrosel-livros">
-    
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        
-            <div class="carousel-inner">
-                
-                <div class="carousel-item active item">
-                    <a  class="d-block w-100" href="pages/Livros/resumoliv.html"><img class="box-carrosel box-livros" src="pages/img/livros/Os-americanos-estao-chegando.jpg" alt="Os-americanos-estao-chegando-capa" srcset=""><p>OS AMERICANOS ESTÃO CHEGANDO</p></a>
+        <section>
+            <h1 class="titulo" id="Novidades"> NOVIDADES</h1>   
+            <div class="container carrosel carrosel-livros">
+                <div class="owl-carousel owl-theme"> <!--Carrossel do OWl está de volta baby-->
+                    <div class="item item-livro" > 
+                        <a  href="#">
+                            <img class="box-carrosel box-livros" src="pages/img/livros/Os-americanos-estao-chegando.jpg" alt="Os-americanos-estao-chegando-capa" srcset=""><p>OS AMERICANOS ESTÃO CHEGANDO</p>
+                        </a>
+                    </div>
+                    <div class="item item-livro" > 
+                        <a  href="#">
+                            <img class="box-carrosel box-livros" src="pages/img/livros/capa-Triste-Fim-De-Policarpo-Quaresma.jpg" alt="capa-Triste-Fim-De-Policarpo-Quaresma" srcset=""><p>O TRISTE FIM 
+                                DE POLICARPO DE QUARESMA</p></a>
+                    </div>
+                    <div class="item item-livro" > 
+                        <a  href="#">
+                             <img class="box-carrosel box-livros" src="pages/img/livros/capa-1984.jpg" alt="1984" srcset=""><p>1984</p> </a>
+                    </div>
+                    <div class="item item-livro"> 
+                        <a  href="#">
+                             <img class="box-carrosel box-livros" src="pages/img/livros/capa-A-Filha-Do-Reverendo.jpg" alt="capa-A-Filha-Do-Reverendo" srcset=""> <p>A FILHA DO REVERENDO</p> 
+                        </a>
+                    </div>
+                    <div class="item item-livro"> 
+                        <a  href="#">
+                             <img class="box-carrosel box-livros" src="pages/img/livros/capa-O-Quinze.jpg" alt="capa-Os-Quinze" srcset=""><p>O QUINZE</p> 
+                        </a> 
+                    </div>
+                    <div class="item item-livro" > 
+                        <a  href="#">
+                             <img class="box-carrosel box-livros" src="pages/img/livros/capa-As-Margens-Do-Rio-Pedra-Eu-Sentei-E-Chorei.jpg" alt="capa-As-Margens-Do-Rio-Pedra-Eu-Sentei-E-Chorei" srcset=""> <p>NA MARGENS DO RIO PIEDRA EU SENTEI E CHOREI</p>
+                        </a>
+                    </div>
+                    <div class="item item-livro" > 
+                        <a  href="#">
+                             <img class="box-carrosel box-livros" src="pages/img/livros/capa-Um-Convite-Para-Um-Homicídio.jpg" alt="capa-Um-Convite-Para-Um-Homicídio" srcset=""> <p>UM CONVITE PARA UM HOMICÍDIO</p>
+                        </a>
+                    </div>
+                    <div class="item item-livro" > 
+                        <a  href="#">
+                             <img class="box-carrosel box-livros" src="pages/img/livros/capa-Tres-Traidores-E-Uns-Outros.jpg" alt="capa-Tres-Traidores-E-Uns-Outros" srcset=""><p>TRÊS TRAIDORES E UNS OUTROS</p>
+                        </a>
+                    </div>
                 </div>
-        
-                <div class="carousel-item item">
-                  <a class="d-block w-100" href="#"><img class="box-carrosel box-livros" src="pages/img/livros/capa-Triste-Fim-De-Policarpo-Quaresma.jpg" alt="capa-Triste-Fim-De-Policarpo-Quaresma" srcset=""><p>O TRISTE FIM DE POLICARPO DE QUARESMA</p></a>
-                </div>
-        
-                <div class="carousel-item item">
-                  <a  class="d-block w-100" href="#"> <img class="box-carrosel box-livros" src="pages/img/livros/capa-1984.jpg" alt="1984" srcset=""><p>1984</p> </a>
-                </div>
-                  
-                <div class="carousel-item item">
-                 <a  class="d-block w-100 "href="#"> <img class="box-carrosel box-livros" src="pages/img/livros/capa-Um-Convite-Para-Um-Homicídio.jpg" alt="capa-Um-Convite-Para-Um-Homicídio" srcset=""> <p>UM CONVITE PARA UM HOMICÍDIO</p></a> 
-                </div>
-                
-                <div class="carousel-item item">
-                  <a  class="d-block w-100" href="#"> <img class="box-carrosel box-livros" src="pages/img/livros/capa-As-Margens-Do-Rio-Pedra-Eu-Sentei-E-Chorei.jpg" alt="capa-As-Margens-Do-Rio-Pedra-Eu-Sentei-E-Chorei" srcset=""> <p>NA MARGENS DO RIO PIEDRA EU SENTEI E CHOREI</p></a>
-                </div>
-                
-                <div class="carousel-item item" ><a class="d-block w-100" href="#"> <img class="box-carrosel box-livros" src="pages/img/livros/capa-Tres-Traidores-E-Uns-Outros.jpg" alt="capa-Tres-Traidores-E-Uns-Outros" srcset=""><p>TRÊS TRAIDORES E UNS OUTROS</p></a>
-                </div>
-              
             </div>
-        
-      <button class="carousel-control-prev carrossel-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      
-        <button class="carousel-control-next carrossel-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-        </div>
-    </div>
-    
-        <h1 class="titulo"> LIVROS MAIS VOTADOS DA SEMANA</h1>
-        <section class="container melhores">
-                <div class="item" id="primeiro" >
-                    <a href="pages/Livros/resumoliv.html">
-                    <img class=" box-livros" src="pages/img/livros/Os-americanos-estao-chegando.jpg" alt="Os-americanos-estao-chegando-capa" srcset=""> </a> 
-                    <p>1º LUGAR</p>
-                    <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 378 </span> </div>
-            
-                <div class="item" id="segundo" >
-                    <a href="#"><img class=" box-livros" src="pages/img/livros/capa-Triste-Fim-De-Policarpo-Quaresma.jpg" alt="capa-Triste-Fim-De-Policarpo-Quaresma" srcset=""> </a> 
-                    <p>2º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 212 </span> </div>
-            
-                <div class="item" id="terceiro"><a href="#"> <img class=" box-livros" src="pages/img/livros/capa-1984.jpg" alt="1984" srcset=""> </a> <p>3º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 213 </span>
-                </div>
-            
-                <div class="item" id="quarto"><a href="#" ><img class="box-livros" src="pages/img/livros/capa-A-Filha-Do-Reverendo.jpg" alt="capa-A-Filha-Do-Reverendo" srcset="">  </a><p>4º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 151 </span>
-                </div>
-            
-                <div class="item" id="quinto" >
-                    <a href="#"> 
-                        <img class=" box-livros" src="pages/img/livros/capa-O-Quinze.jpg" alt="capa-Os-Quinze" srcset=""> </a><p>5º LUGAR</p> <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 140 </span> </div>
-
-    </section>
-
-        <h1 class="titulo" id="Autores-Adicionados"> AUTORES NOVOS</h1> 
-        <div class="container carrosel carrosel-Autores">
-    
-    <div id="carrousselAutores" class="carousel slide" data-bs-ride="carousel">
-    
-        <div class="carousel-inner" style="margin: 0px 10px 0px 10px;">
-            
-            <div class="carousel-item active item">
-                <a class="d-block w-100" href="pages/Autores/resumoaut.html"><img class="box-carrosel box-autores" src="pages/img/autores/Daphne_Du_Maurier.jpg" alt="Daphne_Du_Maurier" srcset=""> <p> DAPHNE DU MAURIER</p></a>
-            </div>
-    
-            <div class="carousel-item item">
-                <a class="d-block w-100" href="#"><img class="box-carrosel box-autores" src="pages/img/autores/George_Orwell.jpg" alt="George_Orwell" srcset=""> <p> GEORGE ORWELL</p></a>
-            </div>
-    
-            <div class="carousel-item item">
-                <a class="d-block w-100" href="#"><img class="box-carrosel box-autores" src="pages/img/autores/rachel-de-queiroz.jpg" alt="rachel-de-queiroz" srcset=""> <p>RACHEL DE QUEIROZ</p></a>
-            </div>
-              
-            <div class="carousel-item item">
-                <a class="d-block w-100" href="#"><img class="box-carrosel box-autores" src="pages/img/autores/Paulo_Coelho.jpg" alt="Paulo_Coelho" srcset=""><p>PAULO COELHO</p></a>
-            </div>
-            
-            <div class="carousel-item item">
-                <a class="d-block w-100" href="#"><img class="box-carrosel box-autores" src="pages/img/autores/Marcelo_Backes.jpg" alt="Marcelo_Backes" srcset=""> <p>MARCELO BACKES</p></a>
-            </div>
-            
-            <div class="carousel-item item" >
-                <a class="d-block w-100" href="#"><img class="box-carrosel box-autores" src="pages/img/autores/Agatha_Christie.jpg" alt="Agatha_Christie" srcset=""> <p>AGATHA CHRISTIE</p> </a>
-            </div>
-          
-            <div class="carousel-item item" ><a class="d-block w-100" href="#"><img class="box-carrosel box-autores" src="pages/img/autores/lima-barreto.jpg" alt="lima-barreto" srcset=""><p>LIMA BARRETO</p></a>
-            </div>
-          
-        </div>
-    
-  <button class="carousel-control-prev carrossel-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  
-    <button class="carousel-control-next carrossel-button" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-    </div>
-</div>
         </section>
+        <section>
+        <h1 class="titulo"> LIVROS MAIS VOTADOS DA SEMANA</h1>
+            <section class="container melhores">
+                    <div class="item" id="primeiro" >
+                        <a href="pages/Livros/resumoliv.html">
+                        <img class=" box-livros" src="pages/img/livros/Os-americanos-estao-chegando.jpg" alt="Os-americanos-estao-chegando-capa" srcset=""> </a> 
+                        <p>1º LUGAR</p>
+                        <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 378 </span> </div>
+                
+                    <div class="item" id="segundo" >
+                        <a href="#"><img class=" box-livros" src="pages/img/livros/capa-Triste-Fim-De-Policarpo-Quaresma.jpg" alt="capa-Triste-Fim-De-Policarpo-Quaresma" srcset=""> </a> 
+                        <p>2º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 212 </span> </div>
+                
+                    <div class="item" id="terceiro"><a href="#"> <img class=" box-livros" src="pages/img/livros/capa-1984.jpg" alt="1984" srcset=""> </a> <p>3º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 213 </span>
+                    </div>
+                
+                    <div class="item" id="quarto"><a href="#" ><img class="box-livros" src="pages/img/livros/capa-A-Filha-Do-Reverendo.jpg" alt="capa-A-Filha-Do-Reverendo" srcset="">  </a><p>4º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 151 </span>
+                    </div>
+                
+                    <div class="item" id="quinto" >
+                        <a href="#"> 
+                            <img class=" box-livros" src="pages/img/livros/capa-O-Quinze.jpg" alt="capa-Os-Quinze" srcset=""> </a><p>5º LUGAR</p> <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 140 </span> </div>
+    
+        </section>
+    </section>
+    <h1 class="titulo" id="Autores-Adicionados"> AUTORES NOVOS</h1> 
+    <div class="container carrosel carrosel-Autores">
+    
+        <div class="owl-carousel owl-theme">
+            <div class="item item-autor">
+                <a href="pages/Autores/resumoaut.html">
+                    <img class="box-carrosel box-autores" src="pages/img/autores/Daphne_Du_Maurier.jpg" alt="Daphne_Du_Maurier" srcset=""> <p> DAPHNE DU MAURIER</p></a>
+            </div>
+            <div class="item item-autor">
+                <a href="#">
+                    <img class="box-carrosel box-autores" src="pages/img/autores/George_Orwell.jpg" alt="George_Orwell" srcset=""> <p> GEORGE ORWELL</p>
+                </a> 
+            </div>
+            <div class="item item-autor" >
+                <a href="#">
+                    <img class="box-carrosel box-autores" src="pages/img/autores/rachel-de-queiroz.jpg" alt="rachel-de-queiroz" srcset=""> <p>RACHEL DE QUEIROZ</p>
+                </a> 
+            </div>
+            <div class="item item-autor" >
+                <a href="#">
+                    <img class="box-carrosel box-autores" src="pages/img/autores/Paulo_Coelho.jpg" alt="Paulo_Coelho" srcset=""><p>PAULO COELHO</p>
+                </a>
+            </div>
+            <div class="item item-autor" >
+                <a href="#">
+                    <img class="box-carrosel box-autores" src="pages/img/autores/Marcelo_Backes.jpg" alt="Marcelo_Backes" srcset=""> <p>MARCELO BACKES</p>
+                </a>
+            </div>
+            <div class="item item-autor" >
+                <a href="#">
+                    <img class="box-carrosel box-autores" src="pages/img/autores/Agatha_Christie.jpg" alt="Agatha_Christie" srcset=""> <p>AGATHA CHRISTIE</p> 
+                </a> 
+            </div>
+            <div class="item item-autor" >
+                <a href="#">
+                    <img class="box-carrosel box-autores" src="pages/img/autores/lima-barreto.jpg" alt="lima-barreto" srcset=""><p>LIMA BARRETO</p>
+                </a>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -170,7 +165,12 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
     <script src="https://kit.fontawesome.com/f64e76efbd.js" crossorigin="anonymous"></script>
+    
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"> </script>
 
 </body>
 </html>

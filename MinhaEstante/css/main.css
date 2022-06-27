@@ -36,10 +36,6 @@ body{
     font-family: var(--FjallaOne);
 }
 
-main{
-    width: 100%;
-    height:100%;
-}
 footer{
     height: 5rem;
     margin-top: 1rem;
@@ -56,6 +52,7 @@ footer{
 
 button, .btn, a, a:visited{
     text-decoration: none;
+    transition: all 0.5s ease;
     color: var(--AmareloQueimadoLetras);
 }
 
@@ -95,7 +92,7 @@ p, h2,h3,h4,h5,h6, span,a, a:hover{
 .hide{
     display:none;
 }
-
+/*Flex pronto*/
 .container{
     display:flex;
     width: 100%;
@@ -103,6 +100,11 @@ p, h2,h3,h4,h5,h6, span,a, a:hover{
     align-items: center;
     justify-content: center;
     
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
 }
 
 /*Cabeçalho da página*/
@@ -121,7 +123,14 @@ header > .container{
     grid-template-columns: 3fr 6fr 3fr;
     align-items: center;
 }
+header > :first-child{
+    position:sticky;
+    background: var(--HeaderPlanoDeFundo);
+    z-index:3;
+    top:0px;
+    opacity: 1.0;
 }
+
 
 .Inicial{
     font-size: 2.5rem;
@@ -247,13 +256,16 @@ header .container th{
 /*Titulos*/
 
 .titulo{
+    position: sticky;
+    top:0px;
     font-size: 2rem;
     background: var(--TituloPlanoDeFundo);
     color: var(--AmareloQueimadoLetras);
-    padding-bottom: 0.3%;
-    padding-top: 0.3%;
-    margin-top: 5px;
+    padding: 0.3% 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
     text-align: center;
+    z-index:3000;
+    opacity: 0.9;
 }
 /*Melhores Livros*/
 
@@ -343,6 +355,8 @@ header .container th{
 /*Item*/
 .item{
     position:relative;
+    transition: all 0.5s ease;
+    
 }
 .active{
     transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
@@ -360,7 +374,7 @@ header .container th{
     padding: 20px;
 }
 .carrosel .item{
-    width:fit-content;
+    width:14rem;
     padding:5px;
     background:var(--AzulEscuroPlanoDeFundo);
     border-radius:5%;
@@ -394,7 +408,6 @@ header .container th{
 
 
 .item:hover img{
-    padding:16px;
     background:none;
 }
 
@@ -404,11 +417,26 @@ header .container th{
     
 }
 
+.item-livro, .item-autor{
+    margin:10px;
+    width:100%;
+}
+
 /*Autores em rolagem*/
 .box-autores{
     height: calc(30vh + 2rem);
     width: calc(30vw + 2rem);
 }
+
+
+/*Animações e Transições*/
+
+.item:hover{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+
 
 /*rodapé*/
 

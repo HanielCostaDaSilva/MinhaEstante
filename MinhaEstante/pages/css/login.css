@@ -1,146 +1,78 @@
-/*imports e variaveis */
-@import url(../../css/main.css);
-
-/*body / header / main / footer */
-header table{
-    font-size:1.5rem;
+* body {
+    background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/3678823-empty-library-interior-design-with-bookshelves-gr%C3%A1tis-vetor.jpg);
+    background-size:cover;
 }
 
-body{
-    text-align: left;
-    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)50%), url(https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_960_720.jpg);
-    background-position:center;
-    background-size: cover;
-    opacity: 50;    
+#social{
+    font-size: 29px;
+    padding:15px;
+    color: #eab31c;
+}
+.content{
+    display:flex;
+    margin: 0px;
+    justify-content: center;
 }
 
-main{
-    position:relative;
-    top:9rem;
-    margin-top:5%;
-}
-
-/*Aba do Login*/
-#Login-Titulo{
-    text-align: center;
+.fa-solid, .fas {
     font-size: 30px;
-    margin-bottom:10px;
-    color: #eee;
-    margin-left: 35px;
-}
-
-#Login-Section{
     text-align: center;
-    padding: 32px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    border-radius: 15px 50px 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    background-color: #eee;
-    top: -1px;
-    width: 450px;
-    height: calc(10rem + 140px);
-    margin: 0 auto;
-    background:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)50%),url(https://img.freepik.com/vetores-gratis/interior-antigo-luxo-da-biblioteca-a-noite-quarto-vazio-escuro-para-ler-com-livros-nas-prateleiras-de-madeira_107791-3025.jpg);
-  opacity: 1;
-  
+    margin-left: 215px;
+  color: #ecec3c;
 }
-
-#Login-Section .button {
-    background-color: #ffffff;
-  border: 2px solid #4CAF50;
-  color: rgb(0, 0, 0);
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-  transition-duration: 0.4s;
-  
-}
-#Login-Section input {
-    width: auto;
-    font-family: unset;
-}
-
-input[type=password]:focus{
-    border: 2px solid rgb(231, 180, 180);
-    border-radius: 4px;
-    background-color:lightblue;
-}
-input[type=email]:focus{
-    border: 2px  solid rgb(231, 180, 180);
-    border-radius: 4px;
-    background-color:lightblue;
-    
-}
-#Login-Section label:nth-child(-n + 1) {    
-    padding: 8px;
-    border-radius:32%;
-    background: linear-gradient(to top, rgba(0,0,50,0.7), rgba(0,0,50,1));
-}
-#Login-Section label{
-    color:#eee;
-    
-}
-
-#Login-Section .button:hover{
-    background-color: #4dac51;
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    opacity: 0.9;
-}
-/*Inputs*/
-
-#Login-Section .email, #Login-Section .senha {
-    text-align: left;
-}
-.email input, .senha input{
-    height:2rem
-}
-
-/*DropButton e o seu conteudo*/
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color:rgb(12, 42, 90);
+    color: #fbc314;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    min-width: 130px;
     
   }
   .dropdown {
     position: relative;
     display: inline-block;
-    left: 0;
+    right: 10px;
+      
   }
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #112d5a;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   .dropdown-content a {
-    color: black;
+    color: #b59945;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 15px;
     
   }
   .dropdown-content a:hover {
-    background-color: #f1f1f1}
+    background-color: #1d2459}
   .dropdown:hover .dropdown-content {
     display: block;
   }
   .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #212f3d;
   }
+/*Caixa com o conteudo*/
+#CaixaComIcone{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Icone{
+    margin:0;
+    font-size:3rem;
+}
+.principal{
+    padding:20px;
+    background: linear-gradient(0deg, rgba(11,18,97,0.7595413165266106) 0%, rgba(3,9,83,0.7987570028011204) 50%, rgba(0,0,0,1) 100%);
+    border-radius:15%;
+    
+}

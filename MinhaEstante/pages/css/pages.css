@@ -47,14 +47,16 @@ header{
     padding: 10px;
     border-top: 10px;
     background: linear-gradient(rgb(39, 45, 51,0.6),rgb(39, 45, 51,0.6) 100%);
+    transition: all 0.5s ease;
     text-align: center;
 }
 .livro-container img{
-    width: 100%;
+    transition: all 0.5s ease;
     height: 90%;
 }
 .livro-container p{
     padding-top: 10px;
+    transition: all 0.5s ease;
     height: 10%;
     font-size: 1rem;
     font-family: 'Fjalla One', sans-serif;
@@ -112,6 +114,7 @@ section.selecionar-pag{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .pesquisar-pag button{
+    transition: all 0.5s ease;
     font-size:14px;
     height: 34px;
     width:3em;
@@ -129,6 +132,7 @@ section.selecionar-pag{
 }
 .selecionar-pag .botao-container button{
     background:var(--PesquisarPagButton);
+    transition: all 0.5s ease;
     border:0px;
     border-radius:30%;
     height: 30px;

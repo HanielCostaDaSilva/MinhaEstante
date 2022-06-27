@@ -4,56 +4,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="MinhaEstante/icones/favicon.ico">
   <title>Os Americanos Estão Chegando - Minha Estante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/resume.css">
 </head>
 <body>
-  <header>
-    <div class="container"
-      style="padding-bottom: 5px; border-bottom: 5px dashed rgb(33, 47, 61);">
-            <div class="#">
-                <h1 class="Inicial"> <i class="fa-solid fa-book-open-reader"></i></i> Minha Estante</h1>
+    <header>
+        <div class="container" style="padding-bottom: 5px; font-size: 5px;">        
+            <a href="../../index.html"><h1 class="Inicial"><i class="fa-solid fa-book-open-reader"></i></i> Minha Estante</h1></a>
             <form method="post">
                 <div class="container" id="Pesquisar">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <input type="text" size="50%" placeholder="Digite título do livro ou nome do autor(a)">
                 </div>
-            </form> 
-            
-                <div class="dropdown">
-                    <div class="container">
-                    <button class="dropelon"> 
-                        <img class="usuarioFoto"src="pages/img/outros/Usuario.jpg"> </button>
-                        <p class="usuarioNome">Elonzinho321</p>
-                    </div>
-                        <div class="dropdown-content">
-                            <a href="https://www.figma.com/file/3rWtag6oLh0amk2wS0XQH1/monitor-app?node-id=5%3A3342">Figna</a>
-                            <a href="dicas.html">Dicas</a>
-                            <a href="#">Ajuda</a>
-                    </div>      
+            </form>
+            <a href="#" class="usuario">
+                <div class="container">
+                            <img class="usuarioFoto"src="../img/outros/Usuario.jpg">
+                            <p class="usuarioNome">Elonzinho321</p>    
+                </div>
+                </a>
+
         </div>
-             
+    </header>
+  <main>
     
+    <section class="container"> <!--Previa e a Sinopse-->
+
+      <section class="container"id="Previa">
+        
+        <img src="../img/livros/Os-americanos-estao-chegando.jpg" class="img-thumbnail col" alt="Livro Os Americanos Estão Chegando" width="300" height="400">
+        <ul class="container-col"> <!-- CONTEUDO DO DROPDOWN-->
+          <h4>OS AMERICANOS ESTÃO CHEGANDO</h4>
+          <li><p>Autora: Daphne du Maurier</p></li>
+          <li><p>Ano: 1973</p></li>
+          <li><p>Páginas: 320</p></li>
+          <li><p>Idioma Original: português</p></li>
+          <li><p>Editora: Círculo do Livro</p></li>
+        </ul>
+        <button>Informações</button> <!-- ISSO AQUI IRÀ VIRAR UM DROPDOWN-->
+        <div class="hide"> 
+
+        </div> <!--COnteudo do dropdown-->
+        <div>
+            <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 213 </span>
         </div>
-  </header>
-  <main class="container">
-    <boocover>
-      <div class="">
-        <img src="../img/livros/Os-americanos-estao-chegando.jpg" class="d-block w-100 box-carrosel  box-livros" alt="Livro Os Americanos Estão Chegando" width="300" height="400">
-        <p>OS AMERICANOS ESTÃO CHEGANDO</p>
-        <p>Daphne du Maurier</p>
-        <p>Ano: 1973</p>
-        <p>320 páginas</p>
-        <p>Idioma: português</p>
-        <p>Editora: Círculo do Livro</p>
-      </div>
-    </boocover>
-    <synopsis>
-      <div>
+      </section>
+    
+    <section class="container container-col" id="Corpo">
+        
         <h1>OS AMERICANOS ESTÃO CHEGANDO</h1>
-        <p>Esta é a história de Emma (na região inglesa de Cornualha) que acorda um belo dia e descobre que o mundo está inteiramente de pernas para o ar: não há correspondência, o telefone e o rádio não funcionam; um navio de guerra está ancorado no porto e há soldados americanos que avançam em direção à casa. O que acontece é que a ação do livro decorre no futuro, um futuro em que a Inglaterra se retirou do Mercado Comum Europeu, está à beira do colapso econômico e chegou à conclusão de que sua única salvação está numa união política, econômica e militar com os Estados Unidos. Teoricamente trata-se de uma união em que há igualdade entre as partes, mas para algumas pessoas tudo começa a parecer mais uma ocupação. </p>
+        
+        <div class="container" id="Usuario-Interacao">
+
+          <button> <span class="quantidade">1</span> Resenhas </button>
+          <button> <span class="quantidade">1</span> Leram </button>
+          <button> <span class="quantidade">1</span> Favoritaram</button>
+  
+        </div>
+        <div class="sobre">
+          <p>Esta é a história de Emma(na região inglesa de Cornualha) que acorda um belo dia e descobre que o mundo está inteiramente de pernas para o ar: não há correspondência, o telefone e o rádio não funcionam; um navio de guerra está ancorado no porto e há soldados americanos que avançam em direção à casa. O que acontece é que a ação do livro decorre no futuro, um futuro em que a Inglaterra se retirou do Mercado Comum Europeu, está à beira do colapso econômico e chegou à conclusão de que sua única salvação está numa união política, econômica e militar com os Estados Unidos. Teoricamente trata-se de uma união em que há igualdade entre as partes, mas para algumas pessoas tudo começa a parecer mais uma ocupação.
+          </p>
       </div>
-    </synopsis>
+  
+        <div class="container" id="Autor">
+
+          <a href="#">
+            <img src="" class="img-thumbnail">
+          </a>
+          <h3 id="Nome">Daphne Du Maurier</h3>
+      <div class="sobre">
+            <p>Era filha de Gerald Du Maurier, famoso ator inglês, e neta de George Du Maurier, escritor de renome franco-britânico, autor de Trilby e Peter Ibbetson. Aos dezoito anos viajou para Paris, onde permaneceu durante seis meses, aprendendo a língua e literatura francesa. Na adolescência, escrevia contos e poemas, revelando influências de Katherine Mansfield, Mary Webb e Guy de Maupassant. Ao longo de sua carreira, escreveu mais de vinte obras, entre as quais se destacaram: Jamaica Inn (A Pousada da Jamaica), em 1936; Rebecca, em 1939, uma deliciosa história de amor e mistério que já vendeu mais de um milhão de exemplares; The King's General (O General do Rei), em 1946; e The Parasites (Os Parasitas), em 1949, dentre outros.
+            </p>
+          </div>  
+        </div>
+        <div> <!-- Referente a um carrossel... Falta definir se vai ser o owl ou o  BootStrap-->
+          <h1 class="titulo"> Obras semelhantes:</h1>
+          
+        </div>
+
+    </section>
   </main>
       <footer>
         <p style="text-align: center;"> &copy;2022 IFPB</p>
