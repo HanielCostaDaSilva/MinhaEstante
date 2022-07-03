@@ -124,10 +124,11 @@ header > .container{
     align-items: center;
 }
 header > :first-child{
-    position:sticky;
+    position:fixed;
     background: var(--HeaderPlanoDeFundo);
-    z-index:3;
-    top:0px;
+    z-index:60;
+    top:0;
+    left:0;
     opacity: 1.0;
 }
 
@@ -215,20 +216,20 @@ header .container th{
     left: 0;
       
   }
-  .dropdown-content{
+div.dropdown-content{
     display: none;
     position: absolute;
     background: #05081e;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 20;
   }
   .dropdown-content a{
     color: white;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
-    
+    display: block;   
+    z-index: 20;
   }
   .dropdown-content a:hover {
     background: #212121}
@@ -243,6 +244,7 @@ header .container th{
     align-items: center;
     justify-content: space-evenly;
     font-size: 3rem;
+    margin-top:63px;
     padding: 5px;
 }
 #escolhas a{
@@ -256,16 +258,14 @@ header .container th{
 /*Titulos*/
 
 .titulo{
-    position: sticky;
     top:0px;
     font-size: 2rem;
     background: var(--TituloPlanoDeFundo);
     color: var(--AmareloQueimadoLetras);
     padding: 0.3% 0px 0px 0px;
-    margin: 5px 0px 0px 0px;
+    margin: 35px 0px 0px 0px;
     text-align: center;
-    z-index:3000;
-    opacity: 0.9;
+    z-index:10px;
 }
 /*Melhores Livros*/
 
@@ -355,19 +355,19 @@ header .container th{
 /*Item*/
 .item{
     position:relative;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     
 }
 .active{
     transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
     width:30vw;
+    
 }
 /*Carrosel*/
 
 .carrosel{
     align-self:center;
     display:flex;
-
     height: 100%;
     width: 100%;
     background: var(--PlanoDeFundoCarrosel);
@@ -379,6 +379,14 @@ header .container th{
     background:var(--AzulEscuroPlanoDeFundo);
     border-radius:5%;
 }
+.carrosel .item:hover{
+    position:relative;
+    background: var(--AmareloQueimado);
+    
+/*     background-color:#284c86; */
+    width:15rem;
+    padding:5px;
+}
 .carrossel-button{
     margin:-22%;
 }
@@ -388,7 +396,6 @@ header .container th{
     display: block;
     cursor: pointer;
     height:450px;
-    width:100%;
 }
 .item p{
     display:flex;
@@ -396,7 +403,6 @@ header .container th{
     justify-content:center;
     text-align: center;
     height:4.5rem;
-    width: 100%;
     color: var(--AmareloQueimadoLetras);
     font-family: var(--FjallaOne);
     font-size: 1rem;
@@ -404,6 +410,7 @@ header .container th{
     padding: 5px 8px 10px 8px;  
     overflow: auto;
     margin-bottom: 5px;
+    transition: all 0.2s ease;
 }
 
 
@@ -414,27 +421,32 @@ header .container th{
 .item:hover p{
     font-weight:bolder;
     background:none;
+    color: var(--CinzaAzulado)
     
 }
 
 .item-livro, .item-autor{
     margin:10px;
-    width:100%;
 }
 
 /*Autores em rolagem*/
+
+.item-autor{
+    margin:20px;
+}
+
 .box-autores{
-    height: calc(30vh + 2rem);
-    width: calc(30vw + 2rem);
+    height: 450px;
+    width: 400px;
 }
 
 
 /*Animações e Transições*/
 
 .item:hover{
-        -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.8);
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9,0.9);
 }
 
 

@@ -1,6 +1,7 @@
 /*VariÃ¡veis e imports*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 @import url(../../css/main.css);
+
 /*Tags*/
 main >h1{
     font-family: 'Fjalla One', sans-serif;
@@ -25,6 +26,9 @@ header{
 }
 
 /*main*/
+.titulo{
+    margin-top:68px;
+}
 
 .corpo{
     display: grid;

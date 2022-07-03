@@ -20,7 +20,10 @@
             <form method="post">
                 <div class="container" id="Pesquisar">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" size="50%" placeholder="Digite título do livro ou nome do autor(a)">
+                    <input type="text" autocomplete="off" list="Sugestoes"size="50%" placeholder="Título do Livro / Autor(a) / Nome do usuário">
+                    <datalist id="Sugestoes">
+                        
+                    </datalist>
                 </div>
             </form> 
             
@@ -53,7 +56,7 @@
             <div class="container carrosel carrosel-livros">
                 <div class="owl-carousel owl-theme"> <!--Carrossel do OWl está de volta baby-->
                     <div class="item item-livro" > 
-                        <a  href="#">
+                        <a  href="pages/Livros/OS_AMERICANOS_ESTAO_CHEGANDO.html">
                             <img class="box-carrosel box-livros" src="pages/img/livros/Os-americanos-estao-chegando.jpg" alt="Os-americanos-estao-chegando-capa" srcset=""><p>OS AMERICANOS ESTÃO CHEGANDO</p>
                         </a>
                     </div>
@@ -98,7 +101,7 @@
         <h1 class="titulo"> LIVROS MAIS VOTADOS DA SEMANA</h1>
             <section class="container melhores">
                     <div class="item" id="primeiro" >
-                        <a href="pages/Livros/resumoliv.html">
+                        <a href="pages/Livros/OS_AMERICANOS_ESTAO_CHEGANDO.html">
                         <img class=" box-livros" src="pages/img/livros/Os-americanos-estao-chegando.jpg" alt="Os-americanos-estao-chegando-capa" srcset=""> </a> 
                         <p>1º LUGAR</p>
                         <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 378 </span> </div>
@@ -124,7 +127,7 @@
     
         <div class="owl-carousel owl-theme">
             <div class="item item-autor">
-                <a href="pages/Autores/resumoaut.html">
+                <a href="pages/Autores/resumeaut.html">
                     <img class="box-carrosel box-autores" src="pages/img/autores/Daphne_Du_Maurier.jpg" alt="Daphne_Du_Maurier" srcset=""> <p> DAPHNE DU MAURIER</p></a>
             </div>
             <div class="item item-autor">
@@ -134,7 +137,7 @@
             </div>
             <div class="item item-autor" >
                 <a href="#">
-                    <img class="box-carrosel box-autores" src="pages/img/autores/rachel-de-queiroz.jpg" alt="rachel-de-queiroz" srcset=""> <p>RACHEL DE QUEIROZ</p>
+                    <img class="box-carrosel box-autores" src="pages/img/autores/Rachel_De_Queiroz.jpg" alt="rachel-de-queiroz" srcset=""> <p>RACHEL DE QUEIROZ</p>
                 </a> 
             </div>
             <div class="item item-autor" >
