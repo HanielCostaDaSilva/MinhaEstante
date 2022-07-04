@@ -4,32 +4,19 @@
 
 :root{
     /*cores*/
+    --SobrePlanoDeFundo: rgb(12, 9, 70);
     --CorDaSection: rgb(174, 182, 191);
     --PreviaPlanoDeFundo: rgb(120, 120, 100);
-    
-    --CorSectionMaisDestaque: rgb(106, 115, 124);
-    --AmareloQueimado:rgb(241, 196, 15);
-    --PretoPoucoEscuro:rgb(23, 32, 42);
-    --BrancoEscurecido: rgb(208, 211, 212);  
-    --CinzaAzulado: rgb(39, 45, 51);
-
-    --AzulEscuroPlanoDeFundo: rgb(0, 0, 35);
-    --AmareloQueimadoLetras:rgb(251, 195, 20);
-    --LinkSelecionado: rgb(154, 125, 10); 
-    --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
-    --PesquisarPagButton:rgb(31 31 45);
-
-    --HeaderPlanoDeFundo:linear-gradient(143deg, rgba(2,4,27,1) 0%, rgba(6,10,31,1) 49%, rgba(0,9,10,1) 100%);
-    --PlanoDeFundoCarrosel: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(87,88,88,1) 50%, rgba(0,0,0,1) 100%);
-
-    --BordaBoxesCarrosel: rgb(191, 192, 193);  
-    --TituloPlanoDeFundo: radial-gradient(circle, rgba(9,6,59,1) 0%, rgba(4,4,25,1) 54%, rgba(5,21,24,1) 100%);
-    --PlanoDeFundoBody:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,27,1) 99%);
-    --FooterPlanoDeFundo:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,45,1) 99%);
-
+    --TextoCor: rgb(52, 73, 94 );
+    --BodyPlanoDeFundo:rgb(1 9 14);
     /*fontes*/
     --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --FjallaOne: 'Fjalla One', sans-serif;
+}
+/*Tags*/
+.Borda-Colorida{
+  border: solid 4px;
+  border-color: rgb(13, 9, 80) !important;
 }
 
 header> :first-child{
@@ -40,70 +27,153 @@ main > :first-child{
     margin-top:78px;
 }
 
-.container-col{
-    display: flex;
-    flex-direction: column;
-}
 h4{
     color:var(--AmareloQueimado)
 }
-#Previa{
-    flex-grow:3;
-    flex-direction: column;
-    border-left
-    
-}
-#Corpo{
-    flex-basis: max-content;
-    flex-direction: column;
+
+body{
+  background: var(--BodyPlanoDeFundo);
+  color:var(--TextoCor);
 }
 
-.sobre {
+button{
+  transition: all 0.7s ease;
+  padding: 4px;
+  border-radius: 15%;
+  font-size: 1rem;
+}
+
+button:hover{
+  color: var(--AzulEscuroPlanoDeFundo);
+  cursor: pointer;
+  background: var(--AmareloQueimado);
+}
+/* Corpo e Previa class*/
+
+
+#Previa{
+    flex-basis: content;
+    width: 14rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Corpo{
+  
+  text-align: justify;
+  align-items: center;
+  justify-items: flex-start;
   
 }
+
+/*Conteúdo da prévia*/
+
 ul li >p{
-    text-align: left;
-    font-size: 15px;
+  text-align: left;
+  font-size: 15px;
 }
 .dropbtn {
-    background-color:var(--AzulEscuroPlanoDeFundo);
-    color: #fbc314;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    min-width: 130px;
+  background-color:var(--AzulEscuroPlanoDeFundo);
+  color: #fbc314;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 130px;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: -30px;
     
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    left: -30px;
-      
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #112d5a;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    
-  }
-  .dropdown-content a {
-    color: #b59945;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 15px;
-    
-  }
-  .dropdown-content a:hover {
-    background-color: #1d2459}
-  .dropdown:hover .dropdown-content {
-    display: block;
-    font-size: 10px;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #212f3d;
-  }
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #112d5a;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: justify;
+}
+.dropdown-content span{
+  color: white;
+}
+.dropdown-content p{
+  padding: 3px;
+  border-bottom: solid 2px white;
+  width: 160px;
+}
+.dropdown-content a {
+  color: #b59945;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  
+}
+.dropdown-content a:hover {
+  background-color: #1d2459}
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-size: 10px;
+}
+.dropdown:hover .dropbtn {
+  background-color: #212f3d;
+}
+
+/*Conteúdo do corpo*/
+#Corpo .titulo{
+  margin: 10px 0px 0px;
+  width: 100%;
+}
+/*Caixa com os botões*/
+#Usuario-Interacao{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-gap: 30px;
+  padding: 10px;
+
+}
+.sobre {
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+  background: var(--SobrePlanoDeFundo);
+  font-size:10px;
+}
+/*Autor*/
+#Autor{
+  padding: 10px;
+}
+#Autor-Informacao{
+
+  justify-self: flex-start;
+  justify-content: flex-start;
+  color: var(--AmareloQueimadoLetras);
+  padding: 5px 0px 20px 0px;;
+}
+#Autor-Informacao img{
+  width:10rem;
+  margin-right: 10px;
+}
+
+#Nome{
+  padding:20px;
+  color: white;
+}
+#sobre-Autor p {
+  height:100px;
+  overflow: hidden;
+}
+#Ler-Mais-Button{
+  height: 50px;
+}
+
+/*Recomendados*/
+
+.recomendados{
+  height: 350px;
+  width:250px;
+  margin: 15px 15px 0px 15px;
+}

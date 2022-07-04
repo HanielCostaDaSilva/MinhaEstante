@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="MinhaEstante/icones/favicon.ico">
   <title>Os Americanos Estão Chegando - Minha Estante</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="../css/resume.css">
 </head>
 <body>
@@ -30,69 +31,117 @@
     </header>
   <main>
     
-    <section class="container rounded-4 .bg-dark.bg"> <!--Previa e a Sinopse-->
+	<section class=" d-flex rounded-4 .bg-dark.bg"> <!--Previa e a Sinopse-->
 
-      <section class="container border-end"id="Previa">
+      <section class=" p-4"id="Previa">
+          <div class="sticky-top">
         
-        <img src="../img/livros/Os-americanos-estao-chegando.jpg" class="img-thumbnail col" alt="Livro Os Americanos Estão Chegando" width="300" height="400">
-<!-- CONTEUDO DO DROPDOWN-->
-        <h4>OS AMERICANOS ESTÃO CHEGANDO</h4>
-        <ul   class="dropdown">
-            <button class="dropbtn">Informações</button>
-            <div class="dropdown-content">      
-              <li><p>Autora: Daphne Du Maurier</p></li>
-              <li><p>Ano: 1973</p></li>
-              <li><p>Páginas: 320</p></li>
-              <li><p>Idioma Original: português</p></li>
-              <li><p>Editora: Círculo do Livro</p></li>
-            </div>
-        </ul>
-       
-         <!-- ISSO AQUI IRÀ VIRAR UM DROPDOWN-->
-        <div class="hide"> 
+            <img src="../img/livros/Os-americanos-estao-chegando.jpg" class="rounded float-start img-fluid" alt="Livro Os Americanos Estão Chegando" width="300" height="400">
+  <!-- CONTEUDO DO DROPDOWN-->
+            <h4>OS AMERICANOS ESTÃO CHEGANDO</h4>
+            <ul class="dropdown">
+              <button class="dropbtn">Informações</button>
+              <div class="dropdown-content">      
+                <li><p>Título original: <span> Rule Britannia </span></p></li>
+                <li><p>Autora: <span> Du Maurier Daphne</span></p></li>
+                <li><p>Ano:<span> 1973</span></p></li>
+                <li><p>Páginas: <span>320</span></p></li>
+                <li><p>Idioma original: <span>Inglês</span></p></li>
+                <li><p>Editora: <span>Círculo do Livro</span></p></li>
+              </div>
+          </ul>
+        </div>
 
-        </div> <!--COnteudo do dropdown-->
-        <div>
-            <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-heart"></i> </span> 213 </span>
+         <!-- ISSO AQUI IRÀ VIRAR UM DROPDOWN-->
+
+        <div class="container">
+			
+            
         </div>
       </section>
     
-    <section class="container container-col" id="Corpo">
-        
+    <section class="p-2 container-col border Borda-Colorida" id="Corpo">
         
         <h1>OS AMERICANOS ESTÃO CHEGANDO</h1>
         
-        <div class="container" id="Usuario-Interacao">
+        <div id="Usuario-Interacao">
 
-          <button> <span class="quantidade">1</span> Resenhas </button>
-          <button> <span class="quantidade">1</span> Leram </button>
-          <button> <span class="quantidade">1</span> Favoritaram</button>
+          <button> <span class="quantidade"> 2 </span> Resenha </button>
+          <button> <span class="quantidade"> 13 </span> Leram </button>
+          <button><span class="coracao"> <i class="fa-solid fa-heart"></i></span> <span class="quantidade"> 213 </span> Favoritaram</button>
   
         </div>
-        <div class="sobre">
-          <p>Esta é a história de Emma(na região inglesa de Cornualha) que acorda um belo dia e descobre que o mundo está inteiramente de pernas para o ar: não há correspondência, o telefone e o rádio não funcionam; um navio de guerra está ancorado no porto e há soldados americanos que avançam em direção à casa. O que acontece é que a ação do livro decorre no futuro, um futuro em que a Inglaterra se retirou do Mercado Comum Europeu, está à beira do colapso econômico e chegou à conclusão de que sua única salvação está numa união política, econômica e militar com os Estados Unidos. Teoricamente trata-se de uma união em que há igualdade entre as partes, mas para algumas pessoas tudo começa a parecer mais uma ocupação.
+		<h4 class="titulo"> Sinopse </h4>
+        <div class="sobre border Borda-Colorida">
+          <p>Esta é a história de Emma(na região inglesa de Cornualha) que acorda em um belo dia e descobre que o seu mundo está inteiramente de pernas para o ar: não há correspondência, o telefone e o rádio não funcionam; e para piorar, um navio de guerra está ancorado no porto e há soldados americanos para toda parte. O que acontece é que a ação do livro decorre no futuro, um futuro em que a Inglaterra se retirou do Mercado Comum Europeu, está à beira do colapso econômico e chegou à conclusão de que sua única salvação está numa união política, econômica e militar com os Estados Unidos. Teoricamente trata-se de uma união em que há igualdade entre as partes, mas para algumas pessoas tudo começa a parecer mais uma ocupação.
           </p>
       </div>
-  
-        <div class="container" id="Autor">
+	  <h4 class="titulo">Autor(a)</h4>
+	
+    <div class="container border Borda-Colorida" id="Autor">
+		
+		<div class="container-col" id="Autor-Informacao">
+		
+		
+				<img src="../img/autores/Daphne_Du_Maurier.jpg" class="rounded">  
 
-          <a href="#">
-            <img src="" class="img-thumbnail">
-          </a>
+		</div>
+				<div class="sobre" id="sobre-Autor">
           <h3 id="Nome">Daphne Du Maurier</h3>
-      <div class="sobre">
-            <p>Era filha de Gerald Du Maurier, famoso ator inglês, e neta de George Du Maurier, escritor de renome franco-britânico, autor de Trilby e Peter Ibbetson. Aos dezoito anos viajou para Paris, onde permaneceu durante seis meses, aprendendo a língua e literatura francesa. Na adolescência, escrevia contos e poemas, revelando influências de Katherine Mansfield, Mary Webb e Guy de Maupassant. Ao longo de sua carreira, escreveu mais de vinte obras, entre as quais se destacaram: Jamaica Inn (A Pousada da Jamaica), em 1936; Rebecca, em 1939, uma deliciosa história de amor e mistério que já vendeu mais de um milhão de exemplares; The King's General (O General do Rei), em 1946; e The Parasites (Os Parasitas), em 1949, dentre outros.
-            </p>
-          </div>  
+			    <p>Era a filha de Gerald Du Maurier, famoso ator inglês, e neta de George Du Maurier, escritor de renome franco-britânico, autor de Trilby e Peter Ibbetson. Aos dezoito anos viajou para Paris, onde permaneceu durante seis meses, aprendendo a língua e literatura francesa. Na adolescência, escrevia contos e poemas, revelando influências de Katherine Mansfield, Mary Webb e Guy de Maupassant. Ao longo de sua carreira, escreveu mais de vinte obras, entre as quais se destacaram: Jamaica Inn (A Pousada da Jamaica), em 1936; Rebecca, em 1939, uma deliciosa história de amor e mistério que já vendeu mais de um milhão de exemplares; The King's General (O General do Rei), em 1946; e The Parasites (Os Parasitas), em 1949, dentre outros.
+			    </p>
+          <a href="#"> <button class="container" id="Ler-Mais-Button"> Ler mais </button></a>
+
+		    </div>  
+		</div>
+
+    <h1 class="titulo"> Obras semelhantes</h1>
+    
+    <div class="text-center">
+      <img src="../img/livros/capa-A-Filha-Do-Reverendo.jpg" class="img-thumbnail rounded recomendados" alt="...">
+      <img src="../img/livros/capa-Nao-Conte-A-Ninguem.jpg" class=" img-thumbnail rounded recomendados" alt="...">
+      <img src="../img/livros/capa-O-Quinze.jpg" class=" img-thumbnail rounded recomendados " alt="...">
+    </div>
+    
+    <h1 class="titulo"> Resenhas </h1>
+    
+    <div class="text-justify container-col"id="resenhas">
+      
+      <div class="resenha container">
+
+          <div class="container-col usuarioResenha">
+            <img class="usuarioFoto" src="../img/outros/Usuario.jpg">
+            <p class="usuarioNome">Elonzinho321</p>    
+          </div>
+          <div>
+            <p>No meu parecer o livro é muito bem estruturado, a história é excelente e traz muitos assuntos pesados para a reflexão do leitor. Outra coisa interessante e que destaca neste livro é a individualidade de cada personagem, a autora conseguiu fazer com que cada um tivesse uma característica que me fazia gargalhar, como as imitações de Colin, ou me sentir bravo, como a audácia de Terry. Enfim, eu recomendo este livro para aqueles que gostam de um romance, nem um pouco meloso, dramas familiares e, principalmente, refletir sobre temas que não são muito discutidos na atualidade.</p>
+          </div>
+
+      </div>
+
+      <div class="resenha container">
+
+        <div class="container-col usuarioResenha">
+          <img class="usuarioFoto" src="../img/outros/Allanzao.jpg">
+          <p class="usuarioNome">Allanzão</p>    
         </div>
-        <div> <!-- Referente a um carrossel... Falta definir se vai ser o owl ou o  BootStrap-->
-          <h1 class="titulo"> Obras semelhantes:</h1>
-          
+        <div>
+          <p>Acho muito interessante como a autora nos coloca na pele de Ema, a personagem principal, uma jovem símpatica e ingênua que vive em uma casa de campo com a sua avó Mad, uma atriz teatral aposentada e bastante destemida. Acho que o trecho do livro que mais marcou a história foi esse: 
+            “(...). Tudo começara com aquele primeiro tiro de pânico, dado pelo soldado desconhecido, que matara Spry. Desde aquele momento fatal o mundo que eles conheciam, estável, seguro, tornara-se, estranho e terrível (...)”.
+          </p>
         </div>
+
+    </div>
+
+
+    </div>
 
     </section>
-  </main>
-      <footer>
+	</section>
+
+</main>
+
+<footer>
         <p style="text-align: center;"> &copy;2022 IFPB</p>
     </footer>
     

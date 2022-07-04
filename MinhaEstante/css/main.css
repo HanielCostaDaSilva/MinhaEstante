@@ -374,24 +374,22 @@ div.dropdown-content{
     padding: 20px;
 }
 .carrosel .item{
-    width:14rem;
+    /*width:14rem;*/
     padding:5px;
     background:var(--AzulEscuroPlanoDeFundo);
     border-radius:5%;
 }
 .carrosel .item:hover{
-    position:relative;
     background: var(--AmareloQueimado);
     
 /*     background-color:#284c86; */
     width:15rem;
     padding:5px;
 }
-.carrossel-button{
-    margin:-22%;
-}
+
 
 .box-carrosel{
+    padding:5px;
     margin-top: 10px;
     display: block;
     cursor: pointer;
@@ -432,22 +430,19 @@ div.dropdown-content{
 /*Autores em rolagem*/
 
 .item-autor{
-    margin:20px;
+    margin:10px 50px 10px 50px;
+    width: calc(15rem + 20px);
+    height:400px;
 }
 
 .box-autores{
-    height: 450px;
+    height: 300px;
     width: 400px;
 }
 
 
 /*Animações e Transições*/
 
-.item:hover{
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9,0.9);
-}
 
 
 /*rodapé*/

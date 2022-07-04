@@ -1,6 +1,8 @@
 /*VariÃ¡veis e imports*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
+@import url(./responsive.css);
 @import url(../../css/main.css);
+
 
 /*Tags*/
 main >h1{
@@ -13,8 +15,11 @@ main >h1{
     padding: 4px;
 }
 /*header*/
+header > :first-child{
+    grid-gap: 25px;
+
+}
 header{
-    position:sticky;
     align-items: baseline;
     justify-content: center;
     font-family: var(--FjallaOne);
@@ -24,7 +29,6 @@ header{
 .Inicial{
     font-size: 2rem;
 }
-
 /*main*/
 .titulo{
     margin-top:68px;
