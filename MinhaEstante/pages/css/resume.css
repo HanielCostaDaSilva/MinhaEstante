@@ -9,6 +9,7 @@
     --PreviaPlanoDeFundo: rgb(120, 120, 100);
     --TextoCor: rgb(52, 73, 94 );
     --BodyPlanoDeFundo:rgb(1 9 14);
+    --resenhaBackground: linear-gradient(0deg, rgba(12,12,14,0.2049194677871149) 0%, rgba(24,24,34,1) 0%, rgba(0,0,0,0.9332107843137255) 100%);
     /*fontes*/
     --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --FjallaOne: 'Fjalla One', sans-serif;
@@ -176,4 +177,42 @@ ul li >p{
   height: 350px;
   width:250px;
   margin: 15px 15px 0px 15px;
+}
+
+/*resenha*/
+.usuarioResenha{
+  align-items: flex-start;
+  padding: 10px;
+  width: 130px;
+  margin:0;
+  align-items: center;
+  align-self: flex-start;
+  justify-self: flex-start;
+  justify-content: flex-start;
+
+}
+.estrelas{
+  color: var(--AmareloQueimadoLetras);
+  position:relative;
+  top:20px;
+  left:40px;
+  background-color: #171720;
+  height: 2rem;
+  border-radius: 10%;
+}
+.usuarioNome{
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+.resenha-container{
+  margin: 15px 0 15px 0;
+  background: var(--resenhaBackground);
+}
+
+.resenha{
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+  font-family: var(--Franklin);
 }

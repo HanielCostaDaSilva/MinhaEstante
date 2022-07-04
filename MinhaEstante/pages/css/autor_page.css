@@ -1,0 +1,23 @@
+@import url(resume.css);
+
+#Usuario-Interacao a{
+    width: 3rem;
+}
+
+#Usuario-Interacao button:hover a{
+    color: var(--AzulEscuroPlanoDeFundo);
+}
+
+#Usuario-Interacao{
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre p{
+    text-align: justify;
+}
+
+.estrela-branco{
+    color:#01090e
+
+}

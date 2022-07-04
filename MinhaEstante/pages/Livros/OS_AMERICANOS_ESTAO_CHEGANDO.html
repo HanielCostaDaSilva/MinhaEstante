@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="MinhaEstante/icones/favicon.ico">
-  <title>Os Americanos Estão Chegando - Minha Estante</title>
+  <title>Os Americanos Estão Chegando — Minha Estante</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   
   <link rel="stylesheet" href="../css/resume.css">
@@ -66,9 +66,9 @@
         
         <div id="Usuario-Interacao">
 
-          <button> <span class="quantidade"> 2 </span> Resenha </button>
-          <button> <span class="quantidade"> 13 </span> Leram </button>
-          <button><span class="coracao"> <i class="fa-solid fa-heart"></i></span> <span class="quantidade"> 213 </span> Favoritaram</button>
+           <button> <a href="#ResenhaTitulo"><span class="quantidade"> 2 </span> Resenha </a> </button> 
+          <button><a href="#"> <span class="quantidade"> 13 </span> Leram </a> </button>
+          <button> <a href="#"><span class="coracao"> <i class="fa-solid fa-heart"></i></span><span class="quantidade"> 213 </span> Favoritaram </a></button>
   
         </div>
 		<h4 class="titulo"> Sinopse </h4>
@@ -103,29 +103,44 @@
       <img src="../img/livros/capa-O-Quinze.jpg" class=" img-thumbnail rounded recomendados " alt="...">
     </div>
     
-    <h1 class="titulo"> Resenhas </h1>
+    <h1 class="titulo" id="ResenhaTitulo"> Resenhas </h1>
     
     <div class="text-justify container-col"id="resenhas">
       
-      <div class="resenha container">
+      <div class="resenha-container container-col">
 
-          <div class="container-col usuarioResenha">
+          <div class="container usuarioResenha">
             <img class="usuarioFoto" src="../img/outros/Usuario.jpg">
             <p class="usuarioNome">Elonzinho321</p>    
+            <div class="container estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
           </div>
-          <div>
+          <div class="resenha">
             <p>No meu parecer o livro é muito bem estruturado, a história é excelente e traz muitos assuntos pesados para a reflexão do leitor. Outra coisa interessante e que destaca neste livro é a individualidade de cada personagem, a autora conseguiu fazer com que cada um tivesse uma característica que me fazia gargalhar, como as imitações de Colin, ou me sentir bravo, como a audácia de Terry. Enfim, eu recomendo este livro para aqueles que gostam de um romance, nem um pouco meloso, dramas familiares e, principalmente, refletir sobre temas que não são muito discutidos na atualidade.</p>
           </div>
 
       </div>
 
-      <div class="resenha container">
+      <div class="resenha-container container-col">
 
-        <div class="container-col usuarioResenha">
+        <div class="container usuarioResenha">
           <img class="usuarioFoto" src="../img/outros/Allanzao.jpg">
-          <p class="usuarioNome">Allanzão</p>    
+          <p class="usuarioNome">Allanzão</p>
+          <div class="container estrelas">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>  
         </div>
-        <div>
+        
+        <div class="resenha">
           <p>Acho muito interessante como a autora nos coloca na pele de Ema, a personagem principal, uma jovem símpatica e ingênua que vive em uma casa de campo com a sua avó Mad, uma atriz teatral aposentada e bastante destemida. Acho que o trecho do livro que mais marcou a história foi esse: 
             “(...). Tudo começara com aquele primeiro tiro de pânico, dado pelo soldado desconhecido, que matara Spry. Desde aquele momento fatal o mundo que eles conheciam, estável, seguro, tornara-se, estranho e terrível (...)”.
           </p>
