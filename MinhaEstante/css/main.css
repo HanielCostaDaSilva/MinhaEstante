@@ -381,9 +381,7 @@ div.dropdown-content{
 }
 .carrosel .item:hover{
     background: var(--AmareloQueimado);
-    
-/*     background-color:#284c86; */
-    width:15rem;
+    width:16rem;
     padding:5px;
 }
 

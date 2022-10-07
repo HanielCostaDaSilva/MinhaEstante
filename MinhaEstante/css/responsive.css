@@ -16,7 +16,7 @@
   .item{
       margin-right:5px;
   }
-  header :first-child{
+  header > :first-child{
     position: static;
   }
 
