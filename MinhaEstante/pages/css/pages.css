@@ -1,7 +1,7 @@
-/*VariÃ¡veis e imports*/
+/*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
-@import url(./responsive.css);
-@import url(../../css/main.css);
+@import './responsive.css';
+@import '../../Themes/main.css';
 
 
 /*Tags*/
@@ -26,9 +26,7 @@ header{
     padding-bottom: 5px; 
 
 }
-.Inicial{
-    font-size: 2rem;
-}
+
 /*main*/
 .titulo{
     margin-top:68px;

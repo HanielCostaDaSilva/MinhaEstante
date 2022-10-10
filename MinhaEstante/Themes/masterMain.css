@@ -1,36 +1,10 @@
 /*https://tailwindcss.com/docs/installation/using-postcss*/
 /*Imports/ variaveis*/
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
-@import url(./responsive.css);
-:root{
-    /*cores*/
-    --AmareloQueimado:rgb(241, 196, 15);
-    --PretoPoucoEscuro:rgb(23, 32, 42);
-    --BrancoEscurecido: rgb(208, 211, 212);  
-    --CinzaAzulado: rgb(39, 45, 51);
-
-    --AzulEscuroPlanoDeFundo: rgb(0, 0, 35);
-    --AmareloQueimadoLetras:rgb(251, 195, 20);
-    --LinkSelecionado: rgb(154, 125, 10); 
-    --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
-    --PesquisarPagButton:rgb(31 31 45);
-
-    --HeaderPlanoDeFundo:linear-gradient(143deg, rgba(2,4,27,1) 0%, rgba(6,10,31,1) 49%, rgba(0,9,10,1) 100%);
-    --PlanoDeFundoCarrosel: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(87,88,88,1) 50%, rgba(0,0,0,1) 100%);
-
-    --BordaBoxesCarrosel: rgb(191, 192, 193);  
-    --TituloPlanoDeFundo: radial-gradient(circle, rgba(9,6,59,1) 0%, rgba(4,4,25,1) 54%, rgba(5,21,24,1) 100%);
-    --PlanoDeFundoBody:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,27,1) 99%);
-    --FooterPlanoDeFundo:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,45,1) 99%);
-
-    /*fontes*/
-    --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --FjallaOne: 'Fjalla One', sans-serif;
-
-}
+@import './masterResponsive.css';
+@import './palette.css';
 
 /*body header main footer*/
-
 body{
     background: var(--PlanoDeFundoBody);
     font-family: var(--FjallaOne);
@@ -114,7 +88,7 @@ header{
     padding-bottom: 10px;
     background: var(--HeaderPlanoDeFundo);
     height: fit-content;
-    padding: 0px 10px 0px 10px ;
+    padding: 0px 10px 0px 10px;
 }
 header > .container{
     padding-bottom: 5px;
