@@ -7,12 +7,13 @@
     <title>Minha Estante</title>
         <link rel="stylesheet" href="../Themes/owl/owl.carousel.min.css">
         <link rel="stylesheet" href="../Themes/owl/owl.theme.default.min.css">
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Themes/masterMain.css">
-    <link rel="stylesheet" href="../Themes/components/Cabecalho.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="../Themes/masterMain.css">
+        <link rel="stylesheet" href="../Themes/components/Cabecalho.css">
 </head>
 <body>
     <header>
+        
         <div id="escolhas" class="container">           
             <a href="./Livros/Livros.html"><button type="button"class="btn"> LIVROS </button> </a>
             <a href="./Autores/Autores.html"> <button type="button"class="btn"> AUTORES </button> </a>
@@ -24,10 +25,11 @@
     <main>
         <section>
             <h1 class="titulo" id="Novidades"> NOVIDADES</h1>   
+            
             <div class="container carrosel carrosel-livros">
-                <div id ="NewsBookCarrosusel"class="owl-carousel owl-theme"> 
-                </div>
+                    <div id ="NewsBooksCarousel"class="owl-carousel owl-theme"></div>                
             </div>
+        
         </section>
         <section>
         <h1 class="titulo"> LIVROS MAIS VOTADOS DA SEMANA</h1>
@@ -54,45 +56,14 @@
     
         </section>
     </section>
-    <h1 class="titulo" id="Autores-Adicionados"> AUTORES NOVOS</h1> 
-    <div class="container carrosel carrosel-Autores">
+        
+    <section>
+        <h1 class="titulo" id="Autores-Adicionados"> AUTORES NOVOS</h1> 
+        <div class="container carrosel carrosel-Autores">
+                <div id='NewsAuthorsCarousel' class="owl-carousel owl-theme"></div>
+            </div>
+    </section>
     
-        <div class="owl-carousel owl-theme">
-            <div class="item item-autor">
-                <a href="./Autores/DHAPNE_DU_MAURIER.html">
-                    <img class="box-carrosel box-autores" src="./img/autores/Daphne_Du_Maurier.jpg" alt="Daphne_Du_Maurier" srcset=""> <p> DAPHNE DU MAURIER</p></a>
-            </div>
-            <div class="item item-autor">
-                <a href="#">
-                    <img class="box-carrosel box-autores" src="../data/img/autores/George_Orwell.jpg" alt="George_Orwell" srcset=""> <p> GEORGE ORWELL</p>
-                </a> 
-            </div>
-            <div class="item item-autor" >
-                <a href="#">
-                    <img class="box-carrosel box-autores" src="..data/img/autores/Rachel_De_Queiroz.jpg" alt="rachel-de-queiroz" srcset=""> <p>RACHEL DE QUEIROZ</p>
-                </a> 
-            </div>
-            <div class="item item-autor" >
-                <a href="#">
-                    <img class="box-carrosel box-autores" src="./img/autores/Paulo_Coelho.jpg" alt="Paulo_Coelho" srcset=""><p>PAULO COELHO</p>
-                </a>
-            </div>
-            <div class="item item-autor" >
-                <a href="#">
-                    <img class="box-carrosel box-autores" src="./img/autores/Marcelo_Backes.jpg" alt="Marcelo_Backes" srcset=""> <p>MARCELO BACKES</p>
-                </a>
-            </div>
-            <div class="item item-autor" >
-                <a href="#">
-                    <img class="box-carrosel box-autores" src="./img/autores/Agatha_Christie.jpg" alt="Agatha_Christie" srcset=""> <p>AGATHA CHRISTIE</p> 
-                </a> 
-            </div>
-            <div class="item item-autor" >
-                <a href="#">
-                    <img class="box-carrosel box-autores" src="./img/autores/lima-barreto.jpg" alt="lima-barreto" srcset=""><p>LIMA BARRETO</p>
-                </a>
-            </div>
-        </div>
     </main>
 
     <footer>
@@ -103,9 +74,10 @@
     
     <script src="https://kit.fontawesome.com/f64e76efbd.js" crossorigin="anonymous"></script>
     
-    <script src="js/owl/jquery.min.js"></script>
-    <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="js/owl/main.js"> </script>
+    
+    <script src="../js/owl/jquery.min.js"></script>
+    <script src="../js/owl/owl.carousel.min.js"></script>
+    <script src="../js/owl/main.js"></script>
     <script type='module' src="../js/DOM/principalPage.js"></script>
 </body>
 </html>

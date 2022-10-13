@@ -6,12 +6,12 @@
     --CinzaAzulado: rgb(39, 45, 51);
 
     --AzulEscuroPlanoDeFundo: rgb(0, 0, 35);
-    --AmareloQueimadoLetras:rgb(251, 195, 20);
+    --AmareloQueimadoLetras:#ffffff;
     --LinkSelecionado: rgb(154, 125, 10); 
     --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
     --PesquisarPagButton:rgb(31 31 45);
 
-    --HeaderPlanoDeFundo:linear-gradient(143deg, rgba(2,4,27,1) 0%, rgba(6,10,31,1) 49%, rgba(0,9,10,1) 100%);
+    --HeaderPlanoDeFundo:#545470;
     --PlanoDeFundoCarrosel: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(87,88,88,1) 50%, rgba(0,0,0,1) 100%);
 
     --BordaBoxesCarrosel: rgb(191, 192, 193);  

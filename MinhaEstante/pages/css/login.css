@@ -1,78 +1,215 @@
-* body {
-    background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/3678823-empty-library-interior-design-with-bookshelves-gr%C3%A1tis-vetor.jpg);
-    background-size:cover;
+body{
+    background: #131315;
+    font-family: "Nunito Sans",sans-serif;
 }
 
-#social{
-    font-size: 29px;
-    padding:15px;
-    color: #eab31c;
-}
-.content{
-    display:flex;
-    margin: 0px;
-    justify-content: center;
-}
 
-.fa-solid, .fas {
-    font-size: 30px;
-    text-align: center;
-    margin-left: 215px;
-  color: #ecec3c;
-}
-.dropbtn {
-    background-color:rgb(12, 42, 90);
-    color: #fbc314;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    min-width: 130px;
-    
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    right: 10px;
-      
-  }
-  .dropdown-content {
+.register-box {
     display: none;
-    position: absolute;
-    background-color: #112d5a;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: #b59945;
-    padding: 12px 16px;
+    position:absolute; 
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #242826 ;
+    box-shadow: 0 15px  25px rgb(143, 124, 236,0.7);
+    border-radius: 10px;
+
+}
+.register-box #form-main h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.register-box .inputForm{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+}
+.register-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding:10px 0;
+    font-size: 14px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.register-box .user-box input:focus~label,
+.register-box .user-box input:valid~label{
+    top: -85px;
+    left:0;
+    color: #e7e723;
+    font-size: 12px;
+}
+
+#submit, #login-submit{
+    margin-left:50px;
+    padding:10px 20px;
+    color:#CBBDDB;
+    font-size: 13px;
     text-decoration: none;
-    display: block;
-    font-size: 15px;
-    
-  }
-  .dropdown-content a:hover {
-    background-color: #1d2459}
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #212f3d;
-  }
-/*Caixa com o conteudo*/
-#CaixaComIcone{    
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #8F7CEC;
+    margin:100px
+}
+
+#submit, #login-submit:hover{
+    background: #8F7CEC;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 25px  #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
+
+}
+
+.button-form {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
 }
-#Icone{
-    margin:0;
-    font-size:3rem;
-}
-.principal{
-    padding:20px;
-    background: linear-gradient(0deg, rgba(11,18,97,0.7595413165266106) 0%, rgba(3,9,83,0.7987570028011204) 50%, rgba(0,0,0,1) 100%);
-    border-radius:15%;
+
+
+#btn-div {   
+    margin-left:50px;
+    padding:10px 20px;
+    color:#CBBDDB;
+    background: #242826;
+    font-size: 16p;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #8F7CEC;
     
+}
+
+#btn-div:hover{
+    background: #8F7CEC;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #8F7CEC, 0 0 25px  #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
+
+}
+
+.div-main {
+    display: flex;
+    position:absolute; 
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);   
+    background: #242826 ;
+    box-shadow: 0 15px  25px rgb(143, 124, 236,0.7);
+    border-radius: 10px;
+}
+
+
+#button-login{
+    margin-top: 20px;
+}
+
+
+.login-user{
+    display: block;
+    position:absolute; 
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #242826 ;
+    box-shadow: 0 15px  25px rgb(143, 124, 236,0.7);
+    border-radius: 10px;
+
+}
+
+.login-user h1{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.login-user input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+}
+
+.login-user label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding:10px 0;
+    font-size: 14px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-user  input:focus~label,
+.login-user input:valid~label{
+    top: -85px;
+    left:0;
+    color: #8F7CEC;
+    font-size: 12px;
+}
+
+
+#photo-user{
+    margin-top: -50px;
+    padding:10px 20px ;
+    padding-left: -10px;
+    color:#CBBDDB;
+    background: #242826;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    width:68%;
+}
+#photo-user:hover{
+    position: relative;
+    right: -60px;
+    top: 0px;
+    padding:13px 15px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 4px;
+  box-shadow: 0 0 5px #8F7CEC, 0 0 25px  #8F7CEC, 0 0 50px #8F7CEC, 0 0 100px #8F7CEC;
+    transition: .5s;
+}
+input[type="file"] {
+     display: none
 }

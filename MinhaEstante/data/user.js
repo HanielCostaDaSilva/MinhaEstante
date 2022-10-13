@@ -1,22 +1,30 @@
-export const usersData=[{
+export const usersData=[
+    {
     'Id':1,
-    'username':'MarCiAno',
+    'username':'Julia',
+    'Email':'Juliana@gmail.com',
+    'password':'Juliana',
+    userPhoto:'https://github.com/julianafer.png'
+    },
+    {
+    'Id':1,
+    'username':'SeaCio',
     'Email':'Marcio@gmail.com',
     'password':'Marcio123',
-    userPhoto:'/https://github.com/ImMarcio.png'
+    userPhoto:'https://github.com/ImMarcio.png'
     },
     {
     'Id':2,
     'username':'AllanZao',
     'Email':'Allan@gmail.com',
     'password':'Allan123',
-    'userPhoto':'/https://github.com/AllanSmithII.png'
+    'userPhoto':'https://github.com/AllanSmithII.png'
     },
     {
     'Id':3,
     'username':'LeinaH',
     'Email':'hanielcosta@gmail.com',
     'password':'Haniel123',
-    'userPhoto':'/https://github.com/HanielCostaDaSilva.png'
+    'userPhoto':'https://github.com/HanielCostaDaSilva.png'
     }
 ]
