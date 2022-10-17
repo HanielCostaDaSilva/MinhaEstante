@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icones/favicon.ico">
+    <title>Minha Estante</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--
+        <link rel="stylesheet" href="../Themes/pallete.css"
+        <link rel="stylesheet" href="../Themes/masterMain.css">
+    -->
+        <link rel="stylesheet" href="../MinhaEstante/Themes/components/Cabecalho.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <header>
+      
+        <div id="escolhas" class="container">           
+            <a href="./Livros/Livros.html"><button type="button"class="btn"> LIVROS </button> </a>
+            <a href="../Autores/Autores.html"> <button type="button"class="btn"> AUTORES </button> </a>
+            <a href="#"> <button type="button"class="btn"> COMUNIDADE </button></a>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Seção de Anúncios e propagandas-->
+        <section>
+            <div id="AdsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imgs/Anuncios/Sorteio.png" class="AdsImg" alt="Sorteio de livro">
+                
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/Anuncios/bebe.png" class="AdsImg" alt="leia para uma criança">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#AdsCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#AdsCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!-- Usuarios Novos-->
+        <section> 
+            <h1 class="titulo"> Clubes do Livro Recomendado</h1>
+            
+            <div class="container d-flex p-2" id="Usuario-Box">
+ 
+                <div class=" Clube-Livro rounded-2 border-light border-3 mx-lg-2">
+                    <img src="imgs/Clube_Livro/manga_is_literature.jpg" class="img-fluid" alt="no_photo">
+                    <p>Mangá também é literatura!</p>
+                </div>
+                <div class=" Clube-Livro rounded-2 border-light border-3 mx-lg-2">
+                    <img src="imgs/Clube_Livro/bigodudo.jpg" class="img-fluid" alt="no_photo">
+                    <p>Clube dos bigodudos</p>
+                </div>
+            </div>
+        </section>
+        <!--Novos Livros Adicionados-->
+        <section>
+            <h1 class="titulo" id="Novidades"> NOVIDADES</h1>
+            
+            <div class="container d-flex p-2 livrosNovosContainer">
+                <div class="livroNovo mx-lg-3 border-1 border-light" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<b class='TituloLivroHover'> Título do livro</b> <p class='DescricaoBreveLivro'>Breve descrição</p>">
+        
+                <img src="imgs/download.jpg" class='img-fluid livrosNovosImagem' alt="NomeDoLivro">
+        
+                </div>
+                <div class="livroNovo mx-lg-3 border-1 border-light" data-bs-toggle="tooltip" data-bs-html="true"data-bs-title="<b class='TituloLivroHover'> Título do livro</b> <p class='DescricaoBreveLivro'> Breve descrição</p>">
+        
+                <img src="imgs/download.jpg" class='img-fluid livrosNovosImagem' alt="NomeDoLivro">
+        
+                </div>
+                <div class="livroNovo mx-lg-3 border-1 border-light"  data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<b class='TituloLivroHover'> Título do livro</b> <p class='DescricaoBreveLivro'> Breve descrição </p>">
+        
+                <img src="imgs/download.jpg" class='img-fluid livrosNovosImagem' alt="NomeDoLivro">
+        
+                </div>
+                <div class="livroNovo mx-lg-3 border-1 border-light" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<b class='TituloLivroHover'> Título do livro</b> <p class='DescricaoBreveLivro'>Breve descrição </p>">
+        
+                <img src="imgs/download.jpg" class='img-fluid livrosNovosImagem' alt="NomeDoLivro">
+        
+                </div>
+                <div class="livroNovo mx-lg-3 border-1 border-light" data-bs-toggle="tooltip" data-bs-html="true"
+            data-bs-title="<b class='TituloLivroHover'> Título do livro </b> <p class='DescricaoBreveLivro'>Breve descrição </p>">
+        
+                <img src="imgs/download.jpg" class='img-fluid livrosNovosImagem' alt="NomeDoLivro">
+        
+                </div>
+                <div class="livroNovo mx-lg-3 border-1 border-light" data-bs-toggle="tooltip" data-bs-html="true"
+            data-bs-title="<b class='TituloLivroHover'> Título do livro</b> <p class='DescricaoBreveLivro'>Breve descrição</p>">
+        
+                <img src="imgs/download.jpg" class='img-fluid livrosNovosImagem' alt="NomeDoLivro">
+        
+                </div>
+            </div>
+        </section>
+        <!-- Livros mais Curtidos-->
+        <section>
+            <h1 class="titulo"> MAIS VISITADOS DA SEMANA</h1>
+            <div class="text-center melhores">
+                <div class="row">
+                  <div class="col">
+                    <div class="ranking-livros" id="primeiro" >
+                        <a href="./Livros/OS_AMERICANOS_ESTAO_CHEGANDO.html">
+                            <img class=" box-livros" src="imgs/download.jpg" alt="Os-americanos-estao-chegando-capa" srcset=""> 
+                        </a> 
+                        <p>1º LUGAR</p>
+                        <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-eye"></i> </span> 378 </span> </div>
+                  </div>
+                  <div class="col">
+                    <div class="ranking-livros" id="segundo" >
+                        <a href="#"><img class=" box-livros" src="imgs/download.jpg" alt="capa-Triste-Fim-De-Policarpo-Quaresma" srcset=""> 
+                        </a> 
+                        <p>2º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-eye"></i> </span> 212 </span> </div>
+                  </div>
+                  <div class="col">
+                    <div class="ranking-livros" id="terceiro">
+                        <a href="#"> <img class=" box-livros" src="imgs/download.jpg" alt="1984" srcset=""> </a> <p>3º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-eye"></i> </span> 213 </span>
+                    </div>
+                  </div>
+                  <div class="col">
+                        <div class="ranking-livros" id="quarto"><a href="#" ><img class="box-livros" src="imgs/download.jpg" alt="capa-A-Filha-Do-Reverendo" srcset="">  </a><p>4º LUGAR</p>  <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-eye"></i> </span> 151 </span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="ranking-livros" id="quinto" >
+                        <a href="#"> 
+                            <img class=" box-livros" src="imgs/download.jpg" alt="capa-Os-Quinze" srcset=""> </a><p>5º LUGAR</p> <span class="coracao-quantidade"> <span class="coracao"> <i class="fa-solid fa-eye"></i> </span> 140 </span> </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+    </section>
+    <!--Sugestão-->
+    <section>
+        <h1 class="titulo">Sugestão Surpressa</h1>
+        <div class="d-flex flex-row-reverse border-bottom border-danger">
+            <button class="btn btn-success text-light p-2"><i class="fa-solid fa-clover"></i> Livro Sortido</button>
+        </div>
+        <div class="position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  
+                <div class="col-md-4">
+                    <img src="imgs/download.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Título do livro</h5>
+                      <p class="card-text">descrição do livro</p>
+                      <p class="card-text"><p class="text-muted">Author Name</p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </section>
+    
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/f64e76efbd.js" crossorigin="anonymous"></script>
+    <script type="module" src='../MinhaEstante/js/components/Cabecalho.js'> </script> 
+    <!--
+    <script src="../js/owl/jquery.min.js"></script>
+    <script src="../js/owl/owl.carousel.min.js"></script>
+    <script src="../js/owl/main.js"></script>
+    <script type='module' src="../js/DOM/principalPage.js"></script>
+    -->
+</body>
+</html>

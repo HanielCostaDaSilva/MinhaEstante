@@ -1,6 +1,6 @@
 var btn = document.getElementById('btn-div');
 var container = document.querySelector('.register-box');
-// função para aparecer
+// função para aparecer a página de cadastro
 btn.addEventListener('click',function(){
     if(container.style.dysplay === 'none'){
         container.style.display = 'block';
@@ -15,7 +15,7 @@ btn.addEventListener('click',function(){
     
 });
 
-// função para sumir
+// função para finalizar
 var submit = document.getElementById('submit');
 submit.addEventListener('click',function(){
     if(container.style.display === 'block'){
@@ -39,22 +39,5 @@ form.reset();
 // Função para colocar os valores do cadastro no form de login
 const formLogin = new FormData(document.querySelector('#form-login'));
 const loginUsuario = document.querySelector('#usuarioSpace').value = inputUsuario;
-const loginSenha = document.querySelector('#senhaSpace').value = inputSenha;
-
-  
+const loginSenha = document.querySelector('#senhaSpace').value = inputSenha;  
 }
-
-function bookInsert(name,url){
-  const book = {
-    name: name,
-    url: url
-    
-  }
-  // dataset.push(book)
-} 
-
-console.log(inputEmail)
-console.log(inputSenha,"Senha aqui <---")
-
-
-

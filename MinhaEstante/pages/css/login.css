@@ -1,8 +1,22 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
+@import './responsive.css';
+@import '../../Themes/masterMain.css';
+
 body{
     background: #131315;
     font-family: "Nunito Sans",sans-serif;
 }
 
+.login-h1 {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  margin: 0 0 30px;
+  font-size: 50px;
+  padding: 15px;
+  text-align: start;
+}
 
 .register-box {
     display: none;
@@ -90,7 +104,7 @@ body{
     padding:10px 20px;
     color:#CBBDDB;
     background: #242826;
-    font-size: 16p;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;

@@ -38,6 +38,6 @@ export function loadHeader() {
     header.insertAdjacentHTML('afterbegin', Cabecalho);
 }
 
-export function GoBack() {
+export function GoBack(){
     window.history.back()
 }

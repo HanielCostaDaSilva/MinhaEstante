@@ -19,46 +19,9 @@
 
         <h1 class="titulo">Livros</h1>
 
-        <div class="corpo container">
-            <div class="livro-container">
-                <a href="OS_AMERICANOS_ESTAO_CHEGANDO.html"><img src="../img/livros/Os-americanos-estao-chegando.jpg"></a>
-                <p> OS AMERICANOS ESTÃO CHEGANDO</p>
-            </div>
-            <div class="livro-container">
-                <a href="#"><img src="../img/livros/capa-Triste-Fim-De-Policarpo-Quaresma.jpg"></a>
-                <p> O TRISTE FIM DE POLICARPO DE QUARESMA</p>
-            </div>
-            <div class="livro-container">
-                <a href="#"><img src="../img/livros/capa-1984.jpg"></a>
-                <p> 1984</p>
-            </div>
-            <div class="livro-container">
-                <a href="#"><img src="../img/livros/capa-A-Filha-Do-Reverendo.jpg"></a>
-                <p> A FILHA DO REVERENDO</p>
-            </div>
-            <div class="livro-container">
-                <img src="../img/livros/capa-O-Quinze.jpg">
-                <p>O QUINZE</p>
-            </div>
-            <div class="livro-container">
-                <img src="../img/livros/capa-As-Margens-Do-Rio-Pedra-Eu-Sentei-E-Chorei.jpg">
-                <p> NA MARGEM DO RIO PIEDRA EU SENTEI E CHOREI</p>
-            </div>
-            <div class="livro-container">
-                <a href="#"><img src="../img/livros/capa-Um-Convite-Para-Um-Homicídio.jpg"></a>
-                <p>UM CONVITE PARA UM HOMICÍDIO</p>
-            </div>
-            <div class="livro-container">
-                <a href="#"><img src="../img/livros/capa-Tres-Traidores-E-Uns-Outros.jpg"></a>
-                <p>TRÊS TRAIDORES E UNS OUTROS</p>
-            </div>
-            <div class="livro-container">
-                <a href="#"><img src="../img/livros/capa-Nao-Conte-A-Ninguem.jpg"></a>
-                <p>NÃO CONTE A NINGUÈM</p>
-            </div>
-        </div>
+        <div id='corpo' class="container"> </div>
         <section class="container selecionar-pag">
-            
+
             <div><span class="pag"><span class="numero-pag">1 </span><span id="ordem-pag">ª</span> Página</span></div>
             
             <form method="post" class="pesquisar-pag">
@@ -71,10 +34,12 @@
             </div>
         </section>
     </main>
+        <p value='livrosPage' id='TipoPagina' style='display:none'></p>
 
     <footer>
         <p style="text-align: center;"> &copy;2022 IFPB</p>
+
     </footer>
-    <script type='module' src="../../js/DOM/AuthorAndBooksPage.js"></script>
+    <script type='module' src="../../js/DOM/BooksPage.js"></script>
 </body>
 </html>
