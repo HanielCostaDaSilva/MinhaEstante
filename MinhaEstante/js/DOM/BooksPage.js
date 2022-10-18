@@ -1,18 +1,21 @@
-import {books} from '../../data/databook.js';
-import * as Cabecalho from'../components/Cabecalho.js';
-Cabecalho.loadHeader()
+import {books} from '../../data/databook.js'
+import {loadHeader} from'../components/Cabecalho.js';
+import { insertFooter } from '../components/Rodape.js';
 
 function insertBook(livro){
-    const livroBox=`<div class="livro-container">
-                <a href="${livro.linkPage}"> <img src="${livro.image}"></a>
-                <p> ${livro.name}</p>
-            </div>`
+    const livroBox=(`<div class="livro-container">
+    <a href="${livro.linkPage}"> <img src="../../data/${livro.image}"></a>
+    <p> ${(livro.name.split('_').join(' '))}</p>
+    </div>`)
     const corpo= document.getElementById('corpo')
     corpo.insertAdjacentHTML('afterbegin',livroBox)
 }
 
-function loadBooks(Livro){
+function loadbooks(Livro){
     Livro.map((livro)=> insertBook(livro))
 }
 
-loadBooks(books)
+
+loadHeader()
+loadbooks(books)
+insertFooter()

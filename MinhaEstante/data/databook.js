@@ -1,5 +1,5 @@
 
-const books=[{
+export const books=[{
 id: 1,
 ISBN: '6276983982022',
 likes:0,
@@ -88,7 +88,7 @@ ISBN: '6276983982022',
 likes:0,
 name: "ASSASSINATO NO BECO",
 linkPage: '#',
-image:"img/livros/capa.jpg",
+image:"img/livros/capa-Assassinato-No-Beco.jpg",
 genres:['Drama','Crime','Suspense','Ficção'],    
 author:" Agatha_Christie"
 },
@@ -105,4 +105,3 @@ author:"Aluíso Azevedo"
 
 ]
 
-export default books

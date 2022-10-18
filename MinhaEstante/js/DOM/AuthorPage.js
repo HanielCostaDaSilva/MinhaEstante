@@ -1,5 +1,5 @@
 import { Authors } from '../../data/dataAuthor.js';
-import * as Cabecalho from '../components/Cabecalho.js';
+import {loadHeader,} from '../components/Cabecalho.js';
 import { insertFooter } from '../components/Rodape.js';
 
 function insertAuthor(author) {
@@ -15,7 +15,9 @@ function loadAuthors(Livro) {
     Livro.map((author) => insertAuthor(author))
 }
 
+
+
 loadAuthors(Authors)
 
-Cabecalho.loadHeader()
+loadHeader()
 insertFooter()

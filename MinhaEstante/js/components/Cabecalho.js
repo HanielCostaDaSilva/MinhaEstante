@@ -4,7 +4,7 @@ export function loadHeader() {
     const Cabecalho = (
         `<div class="container" id='Cabecalho'>
     <div class="container">
-        <h1 id="Inicial" onclick="GoBack()"><i class="fa-solid fa-book-open-reader"></i> Minha Estante</h1>
+        <h1 id="Inicial"><i class="fa-solid fa-book-open-reader"></i> Minha Estante</h1>
          
     </div>
                 
@@ -12,7 +12,7 @@ export function loadHeader() {
                 
         <div class="container" id="Pesquisar">
             
-            <button type="submit" onclick='Search()'><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button type="submit" onclick='${Search()}'><i class="fa-solid fa-magnifying-glass"></i></button>
                     
             <input type="text" autocomplete="off" list="Sugestoes"size="50%" placeholder="Título do Livro ou Nome do(a) Autor(a)">
             
@@ -21,7 +21,7 @@ export function loadHeader() {
     </form> 
             
     <div class="dropdown">
-        <div  onclick="Cabecalho.Goback()" class="container">
+        <div  onclick="goBack()" class="container">
             <img class="dropelon usuarioFoto"src="${usersData[1].userPhoto}"> 
             <p class="usuarioNome">${usersData[1].username}</p>
         </div>
@@ -36,8 +36,12 @@ export function loadHeader() {
     )
     const header = document.querySelector('header')
     header.insertAdjacentHTML('afterbegin', Cabecalho);
+    document.getElementById("Inicial").onclick = function() {goBack()}
 }
 
-export function GoBack(){
+function goBack(){
     window.history.back()
+}
+
+export function Search(){
 }
