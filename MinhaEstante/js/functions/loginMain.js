@@ -1,4 +1,4 @@
-var btn = document.getElementById('btn-div');
+ var btn = document.getElementById('btn-div');
 var container = document.querySelector('.register-box');
 // função para aparecer a página de cadastro
 btn.addEventListener('click',function(){

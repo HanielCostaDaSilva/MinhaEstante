@@ -6,18 +6,18 @@
     --CinzaAzulado: rgb(39, 45, 51);
 
     --AzulEscuroPlanoDeFundo: rgb(0, 0, 35);
-    --AmareloQueimadoLetras:#ffffff;
-    --LinkSelecionado: rgb(154, 125, 10); 
+    --Letras:#ffffff;
+    --LinkSelecionado: rgb(143, 145, 163); 
     --PesquisarPagPlanoDeFundo:rgb(14, 20, 26);
     --PesquisarPagButton:rgb(31 31 45);
 
     --HeaderPlanoDeFundo:#545470;
     --PlanoDeFundoCarrosel: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(87,88,88,1) 50%, rgba(0,0,0,1) 100%);
 
-    --BordaBoxesCarrosel: rgb(191, 192, 193);  
+    --BordaBoxesCarrosel: rgb(74, 92, 109);  
     --TituloPlanoDeFundo: radial-gradient(circle, rgba(9,6,59,1) 0%, rgba(4,4,25,1) 54%, rgba(5,21,24,1) 100%);
-    --PlanoDeFundoBody:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,27,1) 99%);
-    --FooterPlanoDeFundo:linear-gradient(0deg, rgba(0,4,45,1) 0%, rgba(0,0,0,1) 34%, rgba(0,0,0,1) 50%, rgba(3,4,45,1) 99%);
+    --PlanoDeFundoBody:radial-gradient(circle, rgba(190,200,255,1) 63%, rgba(255,255,255,1) 100%);
+    --FooterPlanoDeFundo: linear-gradient(7deg, rgba(186,206,219,1) 0%, rgba(255,255,255,1) 12%, rgba(218,228,232,1) 44%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 88%, rgba(219,229,233,1) 100%);
 
     /*fontes*/
     --Franklin:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

@@ -19,5 +19,8 @@
 
 .estrela-branco{
     color:#020c12 !important;
+}
 
+.Comments {
+  display: flex;
 }

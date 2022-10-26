@@ -1,5 +1,23 @@
 import { usersData } from '../../data/user.js';
 
+function goBack(){
+    window.history.back()
+}
+
+function Search(){
+    window.location.href = "SearchPage.html"
+}
+
+function save(){
+    window.localStorage.setItem('campo1', $('#campo1').val());
+}
+function load(){
+    $('#campo2').val(window.localStorage.getItem('campo1'));
+}
+function erase(){
+    window.localStorage.removeItem('campo1');
+}
+
 export function loadHeader() {
     const Cabecalho = (
         `<div class="container" id='Cabecalho'>
@@ -12,7 +30,7 @@ export function loadHeader() {
                 
         <div class="container" id="Pesquisar">
             
-            <button type="submit" onclick='${Search()}'><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button type="submit" onclick='Search()' id='Enviar'><i class="fa-solid fa-magnifying-glass"></i></button>
                     
             <input type="text" autocomplete="off" list="Sugestoes"size="50%" placeholder="Título do Livro ou Nome do(a) Autor(a)">
             
@@ -26,7 +44,7 @@ export function loadHeader() {
             <p class="usuarioNome">${usersData[1].username}</p>
         </div>
         <div class="dropdown-content">
-            <a href="https://www.figma.com/file/3rWtag6oLh0amk2wS0XQH1/monitor-app?node-id=5%3A3342">Figna</a>
+            <a href="https://www.figma.com/file/3rWtag6oLh0amk2wS0XQH1/monitor-app?node-id=5%3A3342" target="__blank">Figma</a>
             <a href="dicas.html">Dicas</a>
             <a href="#">Ajuda</a>
             <a href="#"> Sobre nós</a>
@@ -37,11 +55,5 @@ export function loadHeader() {
     const header = document.querySelector('header')
     header.insertAdjacentHTML('afterbegin', Cabecalho);
     document.getElementById("Inicial").onclick = function() {goBack()}
-}
-
-function goBack(){
-    window.history.back()
-}
-
-export function Search(){
+    document.getElementById("Enviar").onclick = function() {Search()}
 }

@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
 @import './masterResponsive.css';
 @import './palette.css';
+@import './components/Cabecalho.css';
+@import './components/Rodape.css';
 
 /*body header main footer*/
 body{
     background: var(--PlanoDeFundoBody);
     font-family: var(--FjallaOne);
 }
-
 
 /*tags*/
 *{
@@ -21,7 +22,7 @@ body{
 button, .btn, a, a:visited{
     text-decoration: none;
     transition: all 0.5s ease;
-    color: var(--AmareloQueimadoLetras);
+    color: var(--Letras);
 }
 
 button,a:hover{
@@ -40,12 +41,12 @@ ul li{
 }
 
 h1 {
-  color: var(--AmareloQueimadoLetras);
+  color: var(--Letras);
 }
 
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--AmareloQueimadoLetras);
+    color: var(--Letras);
     font-weight: bolder;
     font-size: 1.2rem;
     margin: 0;
@@ -78,7 +79,7 @@ p, h2,h3,h4,h5,h6, span,a, a:hover{
 /*Cabeçalho da página*/
 
 header{
-    color: var(--AmareloQueimadoLetras);
+    color: var(--Letras);
     padding-bottom: 10px;
     background: var(--HeaderPlanoDeFundo);
     height: fit-content;
@@ -124,7 +125,7 @@ header > :first-child{
     top:0px;
     font-size: 2rem;
     background: var(--TituloPlanoDeFundo);
-    color: var(--AmareloQueimadoLetras);
+    color: var(--Letras);
     padding: 0.3% 0px 0px 0px;
     margin: 35px 0px 0px 0px;
     text-align: center;
@@ -245,7 +246,6 @@ header > :first-child{
 }
 .carrosel .item:hover{
     background: var(--AmareloQueimado);
-    width:16rem;
     padding:5px;
 }
 
@@ -262,7 +262,7 @@ header > :first-child{
     justify-content:center;
     text-align: center;
     height:4.5rem;
-    color: var(--AmareloQueimadoLetras);
+    color: var(--Letras);
     font-family: var(--FjallaOne);
     font-size: 1rem;
     font-weight: bolder;
