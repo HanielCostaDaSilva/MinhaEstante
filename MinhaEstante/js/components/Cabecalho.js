@@ -1,23 +1,5 @@
 import { usersData } from '../../data/user.js';
 
-function goBack(){
-    window.history.back()
-}
-
-function Search(){
-    window.location.href = "SearchPage.html"
-}
-
-function save(){
-    window.localStorage.setItem('campo1', $('#campo1').val());
-}
-function load(){
-    $('#campo2').val(window.localStorage.getItem('campo1'));
-}
-function erase(){
-    window.localStorage.removeItem('campo1');
-}
-
 export function loadHeader() {
     const Cabecalho = (
         `<div class="container" id='Cabecalho'>
@@ -35,9 +17,9 @@ export function loadHeader() {
             <input type="text" autocomplete="off" list="Sugestoes"size="50%" placeholder="Título do Livro ou Nome do(a) Autor(a)">
             
         </div>
-            
+ 
     </form> 
-            
+    
     <div class="dropdown">
         <div  onclick="goBack()" class="container">
             <img class="dropelon usuarioFoto"src="${usersData[1].userPhoto}"> 

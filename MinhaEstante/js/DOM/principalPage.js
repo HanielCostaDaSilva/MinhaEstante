@@ -1,7 +1,7 @@
 import{books} from '../../data/databook.js';
 import{Authors} from '../../data/dataAuthor.js';
 import * as Cabecalho from'../components/Cabecalho.js';
-import * as FinalPage from '..components/Cabecalho.js'  // Fazer logo o Footer
+import * as FinalPage from '../components/Rodape.js'  // Fazer logo o Footer
 
 
 function loadBook(books){
