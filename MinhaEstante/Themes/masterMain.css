@@ -8,7 +8,7 @@
 
 /*body header main footer*/
 body{
-    background: var(--PlanoDeFundoBody);
+    background: var(--AzulEsbranquicado);
     font-family: var(--FjallaOne);
 }
 
@@ -81,7 +81,7 @@ p, h2,h3,h4,h5,h6, span,a, a:hover{
 header{
     color: var(--Letras);
     padding-bottom: 10px;
-    background: var(--HeaderPlanoDeFundo);
+    background: var(--TitulosPlanoDeFundo);
     height: fit-content;
     padding: 0px 10px 0px 10px;
 }
@@ -94,7 +94,7 @@ header > .container{
 }
 header > :first-child{
     position:fixed;
-    background: var(--HeaderPlanoDeFundo);
+    background: var(--TitulosPlanoDeFundo);
     z-index:60;
     top:0;
     left:0;
@@ -124,7 +124,7 @@ header > :first-child{
 .titulo{
     top:0px;
     font-size: 2rem;
-    background: var(--TituloPlanoDeFundo);
+    background: var(--TitulosPlanoDeFundo);
     color: var(--Letras);
     padding: 0.3% 0px 0px 0px;
     margin: 35px 0px 0px 0px;

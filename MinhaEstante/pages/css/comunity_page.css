@@ -1,5 +1,6 @@
 import (pages.css)
 
 .conteudo {
-  
+  display: inline;
+  justify-content: start;
 }

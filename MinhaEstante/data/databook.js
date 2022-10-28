@@ -101,6 +101,16 @@ image:"img/livros/capa-O-Cortiço.jpg",
 genres:['Brasileiro','Romance','Ficção'],    
 author:"Aluíso Azevedo"
 },
-
+{
+id: 2,
+ISBN: '6276983982022',
+likes:0,
+name: "1984",
+linkPage: '#',
+image:"img/livros/capa-Os-Americanos-Estao-Chegando.jpg",
+genres:['Drama','Romance','Ficção','Suspense'],
+author:"Daphne_Du_Maurier"
+},
+                    
 ]
 
