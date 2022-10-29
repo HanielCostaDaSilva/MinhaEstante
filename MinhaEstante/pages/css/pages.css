@@ -154,3 +154,8 @@ section.selecionar-pag{
     background: var(--AmareloQueimado);
     color: var(--PesquisarPagButton);
 }
+
+/* Comentários Dinâmicos */
+.conteudo {
+  display: flex;
+}
