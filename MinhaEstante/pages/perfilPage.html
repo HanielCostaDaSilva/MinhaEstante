@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Perfil </title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+	<link href="css/perfil.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+</head>
+
+<body>
+<!--   Campo do offcavas -->
+  <button id='ferramentas'class="p-3 mb-2  text-white " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ferramentas +</button>
+<!--       ferramentas -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header text-dark bg-secondary ">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Ferramentas do leitor</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-3 mb-2 bg-dark">
+    <p>
+      <div>
+      <button type="button" class="btn btn-primary position-relative w-30">
+  Notificações
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    19+
+    <span class="visually-hidden">Mensagens não lidas</span>
+  </span>
+</button>
+    </div>
+     <div>
+        <button class="btn btn-secondary" type="file" data-bs-toggle="modal" data-bs-target="#edit-user" >Editar perfil</button>
+      </div>
+      <div>
+      <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#exampleModal">Inserir Livro nas Sugestões<i class="fas fa-paperclip"></i></button>
+      </div>
+     
+    
+    </p>
+  </div>
+</div>
+  
+	<div class="container">
+		<h1> Perfil </h1>
+		<p>Leitor</p>
+    
+		<img class="avatar" src="imgs/CJ.jpg" alt="Avatar">
+    <br>
+   
+
+		<div class="about">
+			<h1>Sobre mim</h1>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, porro, dignissimos non eaque praesentium
+				distinctio possimus at delectus dolores necessitatibus, iure ex temporibus nam quas accusantium. Libero
+				laudantium ratione error.</p>
+		</div>
+
+		<div>
+			<h2>Detalhes</h2>
+			<span class="negrito">Nome:</span>
+			<p>Nome do usuário</p>
+			<span class="negrito">Idade:</span>
+			<p>idade do usários</p>
+			<span class="negrito">Localização:</span>
+			<p>local</p>
+		</div>
+
+<!--     carrosel  de livros sugeridos pelo leitor-->
+    <h1>Livros sugeridos</h1>
+   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div  id='carousel-sugetion' class="carousel-inner">
+    <div  class="carousel-item active">
+      <img src="imgs/capa-A-Filha-Do-Reverendo.jpg" class="w-25 p-3 rounded mx-auto " alt="...">
+      
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+<!--    Livros vistso  -->
+			<h1>Livros Vistos: </h1>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div  class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="imgs/capa-1984.jpg" class="d-block w-25 p-3 rounded mx-auto" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="imgs/capa-A-Filha-Do-Reverendo.jpg" class="d-block w-25 p-3 rounded mx-auto" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="imgs/capa-As-Margens-Do-Rio-Pedra-Eu-Sentei-E-Chorei.jpg" class="d-block w-25 p-3 rounded mx-auto" alt="...">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Anterior</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Próximo</span>
+				</button>
+			  </div>
+	</div>
+    <div class="modal fade" id="edit-user" tabindex="-1" aria-labelledby="label-user" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="label-user">Edição de Perfil</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="change-box">
+          <label for='usuario-ch'>Nome de Usuário: </label>
+          <br>
+          <input id='usuario-ch' type="text" name='usuario-login' required=''>
+        </div>
+        <div>
+
+        </div>
+        <div class='change-box'>
+          <label>Nova foto de Perfil </label>
+           <button style='border: none;'> <i class="fas fa-upload"> </i></button>
+        </div>
+        <button>Muda senha</button>
+        
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar alterações</button>
+        <button type="button" class="btn btn-primary">Salvar Alterações</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Inserção de Livros:</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label class='m-2'for='inputNameBook'> Nome do Livro: </label>
+        <input id='inputNameBook' name='nomeDoLivro'>
+        <br>
+        <label class='p-1'for='inputUrlBook'>Imagem do Livro</label>
+        <input id='inputUrlBook'>
+        
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar inserção</button>
+        <button id='btn-insert' type="button" class="btn btn-primary" data-bs-dismiss="modal">Inserir livro</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+<!--   //Carrosel de sugestões -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src='../js/functions/perfilMain.js'></script>
+</body>
+
+</html>

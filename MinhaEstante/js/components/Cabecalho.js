@@ -26,10 +26,12 @@ export function loadHeader() {
             <p class="usuarioNome">${usersData[1].username}</p>
         </div>
         <div class="dropdown-content">
+        <a href="../pages/perfilPage.html"> Perfil</a>
             <a href="https://www.figma.com/file/3rWtag6oLh0amk2wS0XQH1/monitor-app?node-id=5%3A3342" target="__blank">Figma</a>
             <a href="dicas.html">Dicas</a>
             <a href="#">Ajuda</a>
             <a href="#"> Sobre nós</a>
+            
         </div>               
     </div>     
 </div>`

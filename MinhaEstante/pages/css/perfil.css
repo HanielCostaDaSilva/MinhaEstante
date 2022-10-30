@@ -1,0 +1,84 @@
+
+		* {
+			font-family: 'Ubuntu', sans-serif;
+		}
+		
+		body {
+			background-color:rgb(130, 186, 185); 			
+			text-align: center;			
+			/* margin: 25px; */
+		 }
+		 
+		 .container {
+			background-color: rgb(210, 214, 225); 	
+			padding: 15px;
+			text-align: center;			
+		 }
+		 
+		 h1 {
+			color: rgb(130, 186, 185);
+		 }
+		 
+		 h2 {
+			color:rgb(130, 186, 185);
+			font-size: 14px;
+		 }
+		 
+		 .about h1 {
+		  font-size: 16px;
+		 }
+		 
+		 .about p {
+			color: rgb(68, 82, 109);
+			font-weight: 400;
+		 }
+		 
+		 .about {
+			padding: 30px;
+			margin: 30px;
+			background-color: #fff; 
+			border-radius: 0%;
+			text-align: center;
+		 }
+		
+		img.avatar {
+			width:200px;
+			border-radius: 125px;
+			filter: grayscale(1);
+			transition: 0.5s;
+		}
+		
+		img.ico {
+			width:20px;			
+			filter: grayscale(1);
+			transition: 0.5s;
+			
+		}
+		
+		
+		.negrito {
+			font-weight: 700;
+		}
+        .gallery{
+            left: 33%;
+            text-align: center;
+            width: 30rem;
+            height: 23rem;
+            position: relative;
+            display: flex;
+            overflow: auto;
+            scroll-snap-type: unset;
+        
+        }
+        
+        
+     
+       #ferramentas{
+        background-color:rgb(68, 82, 109);
+         border-bottom-right-radius: 13px;
+         border-color:transparent;
+         
+      }
+        
+		
+
