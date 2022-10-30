@@ -1,0 +1,24 @@
+{
+  "name": "minha-estanteapp",
+  "version": "1.0.0",
+  "description": "APP FEITO PARA CONTER COMENTÁRIOS DINÂMICOS PARA A MINHA ESTANTE, PROJETO DA DISCIPLINA LINGUAGEM DE SCRIPT, DO CURSO TSI, INSTITUTO FEDERAL DA PARAIBA.",
+  "main": "index.js",
+  "scripts": {
+    "test": "myestanteapp-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanielCostaDaSilva/MinhaEstante.git"
+  },
+  "keywords": [
+    "minhaestante-app",
+    "MinhaEstante-App",
+    "MinhaEstante-APP"
+  ],
+  "author": "Allan Alves Amancio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanielCostaDaSilva/MinhaEstante/issues"
+  },
+  "homepage": "https://github.com/HanielCostaDaSilva/MinhaEstante#readme"
+}
