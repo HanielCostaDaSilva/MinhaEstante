@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/HanielCostaDaSilva/MinhaEstante/issues"
   },
-  "homepage": "https://github.com/HanielCostaDaSilva/MinhaEstante#readme"
+  "homepage": "https://github.com/HanielCostaDaSilva/MinhaEstante#readme",
+  "dependencies": {
+    "pusher": "^5.1.1-beta"
+  }
 }
