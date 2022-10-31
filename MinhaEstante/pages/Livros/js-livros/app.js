@@ -3,9 +3,9 @@
 // New Comment Received Event Handler
     // We will take the Comment Template, replace placeholders & append to commentsList
   function newCommentReceived(data){
-      var newCommentHtml = commentTemplate.innerHTML.replace('{{name}}',data.name);
-      newCommentHtml = newCommentHtml.replace('{{email}}',data.email);
-      newCommentHtml = newCommentHtml.replace('{{comment}}',data.comment);
+      var newCommentHtml = commentTemplate.innerHTML.replace('{{name}}', data.name);
+      newCommentHtml = newCommentHtml.replace('{{email}}', data.email);
+      newCommentHtml = newCommentHtml.replace('{{comment}}', data.comment);
       var newCommentNode = document.createElement('div');
       newCommentNode.classList.add('comment');
       newCommentNode.innerHTML = newCommentHtml;
