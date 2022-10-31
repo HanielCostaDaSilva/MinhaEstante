@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Themes/masterMain.css">
-    <title>Estante</title>
-</head>
-<body>
-<header></header>
-<main>
-    
-    <section> <!--Onde será adicionado os livros-->
-        <table>
-        <th></th>
-        </table>
-    <div> <!--Correspondencias div-->
-        <img> <!--Capa do livro-->
-        <div>
-            <a href="javascript:void(0)" onclick="Avaliar(1)">
-            <img src="img/star0.png" id="s1"></a>
-    
-            <a href="javascript:void(0)" onclick="Avaliar(2)">
-            <img src="img/star0.png" id="s2"></a>
-    
-            <a href="javascript:void(0)" onclick="Avaliar(3)">
-            <img src="img/star0.png" id="s3"></a>
-            
-            <a href="javascript:void(0)" onclick="Avaliar(4)">
-            <img src="img/star0.png" id="s4"></a>
-            
-            <a href="javascript:void(0)" onclick="Avaliar(5)">
-            <img src="img/star0.png" id="s5"></a>
-            <p id="rating">0</p>
-        </div>  <!--Avaliação do livro-->
-        <p> Nome do livro<p>
-        <p> Gênero1, Gênero2, Gênero3 </p>
-        <p><span>123</span> páginas </p>
-    
-    </div>
-    </section>
-</main>
-<footer></footer>
 
-<script src="https://kit.fontawesome.com/f64e76efbd.js" crossorigin="anonymous"></script>
-<script type="module" src="../js/DOM/SearchPage.js"></script>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <link rel="stylesheet" href="../Themes/SearchPage.css">
+   <script src="https://kit.fontawesome.com/f64e76efbd.js" crossorigin="anonymous"></script>
+   <title>Bibliotecário</title>
+</head>
+
+<body>
+   <header>
+      <div class="container" id='Cabecalho'>
+         <div class="container">
+            <h1 id="Inicial"><i class="fa-solid fa-book-open-reader"></i> Minha Estante</h1>
+            
+         </div>
+                     
+         <form id="pesquisaForm" onsubmit="handleEvent(event)">
+   
+            <div class="container" id="Pesquisar">
+               
+               <button type="submit" id='Enviar' onclick="search_books()"> <i class="fa-solid fa-magnifying-glass"></i>
+               </button>
+                        
+               <input id='BuscaInput' type="text" autocomplete="off" size="50%" placeholder="Título do Livro ou Nome do(a) Autor(a)">
+               
+            </div>
+      
+         </form> 
+      </div>
+   </header>
+   <main>
+      <p id="correspondencia"><span id="corespondenciaQuantidade">0 </span> correspondência</p>
+      <!--Onde será adicionado os livros-->
+      <section id="Resultados" class="d-flex flex-column">
+
+      </section>
+   </main>
+
+   <script type="module" src="../js/DOM/SearchPage.js"></script>
+
 </body>
+
 </html>
