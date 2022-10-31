@@ -41,3 +41,4 @@ export function loadHeader() {
     document.getElementById("Inicial").onclick = function() {goBack()}
     document.getElementById("Enviar").onclick = function() {Search()}
 }
+console.log('oi')
