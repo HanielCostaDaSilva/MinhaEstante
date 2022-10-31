@@ -1,5 +1,17 @@
 // Using IIFE for Implementing Module Pattern to keep the Local Space for the JS Variables
 
+// New Comment Received Event Handler
+    // We will take the Comment Template, replace placeholders & append to commentsList
+  function newCommentReceived(data){
+      var newCommentHtml = commentTemplate.innerHTML.replace('{{name}}',data.name);
+      newCommentHtml = newCommentHtml.replace('{{email}}',data.email);
+      newCommentHtml = newCommentHtml.replace('{{comment}}',data.comment);
+      var newCommentNode = document.createElement('div');
+      newCommentNode.classList.add('comment');
+      newCommentNode.innerHTML = newCommentHtml;
+      commentsList.appendChild(newCommentNode);
+    }
+    
 var commentForm = document.getElementById('comment-form');
 
 // Adding to Comment Form Submit Event
@@ -46,16 +58,4 @@ var commentsList = document.getElementById('comments-list'),
 
 // Binding to Pusher Event on our 'flash-comments' Channel
 channel.bind('new_comment',newCommentReceived);
-
-// New Comment Received Event Handler
-    // We will take the Comment Template, replace placeholders & append to commentsList
-    function newCommentReceived(data){
-      var newCommentHtml = commentTemplate.innerHTML.replace('{{name}}',data.name);
-      newCommentHtml = newCommentHtml.replace('{{email}}',data.email);
-      newCommentHtml = newCommentHtml.replace('{{comment}}',data.comment);
-      var newCommentNode = document.createElement('div');
-      newCommentNode.classList.add('comment');
-      newCommentNode.innerHTML = newCommentHtml;
-      commentsList.appendChild(newCommentNode);
-    }
 

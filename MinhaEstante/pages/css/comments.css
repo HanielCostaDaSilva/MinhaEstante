@@ -109,7 +109,7 @@
 }
 
 .flash-comments .comment-info{
-    flex:5;
+    flex-shrink: 5;
 }
 
 .flash-comments .comment-info .row{
@@ -132,10 +132,10 @@
 
 /* CSS Code for Animating Comment Element */
 .flash-comments .comment{
-  animation: animationFrames ease 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards; /*when the spec is finished*/
+  -ms-animation: animationFrames ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode:forwards; /*when the spec is finished*/
   -webkit-animation: animationFrames ease 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-transform-origin: 50% 50%;
@@ -148,10 +148,10 @@
   -o-animation-iteration-count: 1;
   -o-transform-origin: 50% 50%;
   -o-animation-fill-mode:forwards; /*Not implemented yet*/
-  -ms-animation: animationFrames ease 1s;
-  -ms-animation-iteration-count: 1;
-  -ms-transform-origin: 50% 50%;
-  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  animation: animationFrames ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*IE 10+*/
 }
 
 @keyframes animationFrames{
