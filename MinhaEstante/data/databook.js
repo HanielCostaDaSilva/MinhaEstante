@@ -117,11 +117,10 @@ ISBN: '6276983982022',
 likes:0,
 name: "OS AMERICANOS ESTÃO CHEGANDO",
 linkPage: '#',
-image:"img/livros/capa-Os-Americanos-Estao-Chegando.jpg",
+image:"img/livros/capa-Os-americanos-Estao-Chegando.jpg",
 genres:['Drama','Romance','Ficção','Suspense'],
 pages:345,
 author:"Daphne_Du_Maurier"
-},
-                    
+},                    
 ]
 

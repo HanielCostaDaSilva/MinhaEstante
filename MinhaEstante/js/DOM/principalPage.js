@@ -42,4 +42,4 @@ function insertAuthorsNew(author){
 loadBook(books);
 Cabecalho.loadHeader();
 loadAuthors(Authors);
-console.log('Aqui está funcinando')
+console.log('Aqui está funcionando')

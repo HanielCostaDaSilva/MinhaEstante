@@ -33,7 +33,9 @@ export function loadHeader() {
             <p class="usuarioNome">${usersData[1].username}</p>
         </div>
         <div class="dropdown-content">
-            <a href="../SearchPage.html">Pesquisar Livros</a>
+
+            <a href="perfilPage.html"> Perfil </a>
+            <a href="SearchPage.html">Pesquisar Livros</a>
             <a href="dicas.html">Dicas</a>
             <a href="#">Ajuda</a>
             <a href="#"> Sobre nós</a>
