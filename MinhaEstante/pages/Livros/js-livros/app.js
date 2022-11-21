@@ -40,6 +40,12 @@ function addNewComment(event){
       xhr.send(JSON.stringify(newComment));
 }
 
+const form = document.getElementById('comment-form')
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    console.log('Deu certo')
+})
+
 var commentsList = document.getElementById('comments-list'),
     commentTemplate = document.getElementById('comment-template');
 
