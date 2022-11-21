@@ -37,6 +37,14 @@
         "nested-interactive": "off"
       }
     ],
-    "highest-available-document-mode": "off"
+    "highest-available-document-mode": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
   }
 }
