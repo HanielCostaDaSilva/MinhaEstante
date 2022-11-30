@@ -1,18 +1,23 @@
 // 26/11/2022
 // Aqui é onde vamos fazer os componentes do site
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 import './App.css';
 
-export default function Cabecalho() {
+function App() {
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:30000/static/static/livros.json').then((response) => response.json()).then(console.log);
+    fetch('http://localhost:30000/static/livros.json')
+    .then((response) => response.json())
+    .then(setData);
   }, [])
+
+  if (!data || !data.length) return null;
 
   return (
       <div className="container">
         <div className="carousel">
-          <div class="item">
+          <div className="item">
             <div className="image">
               <img src="..\static\images\livros\capa-Os-americanos-Estao-Chegando150w224h.png" alt="livro"/>
             </div>
@@ -27,3 +32,4 @@ export default function Cabecalho() {
   )
 }
 
+export default App;
