@@ -6,8 +6,7 @@ import './App.css';
 export default function Cabecalho() {
 
   useEffect(() => {
-
-
+    fetch('http://localhost:30000/static/static/livros.json').then((response) => response.json()).then(console.log);
   }, [])
 
   return (
