@@ -45,6 +45,7 @@ function createCorrespondenceBox(book){
  </div>
 
 </div>`)
+
  const shownResults=document.getElementById('Resultados')
  shownResults.insertAdjacentHTML('beforeend',caixaPesquisada)
 }

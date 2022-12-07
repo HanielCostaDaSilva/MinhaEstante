@@ -28,11 +28,11 @@ function Cabecalho(){
         <div className="dropdown-content">
 
             <a href="perfilPage.html"> Perfil </a>
-            <a href="SearchPage.html">Pesquisar Livros</a>
+            <a href="SearchPage.html">Pesquisar Livros </a>
             <a href="dicas.html">Dicas</a>
             <a href="#">Ajuda</a>
-            <a href="#"> Sobre nós</a>
-            
+            <button>Inserir um novo livro</button>
+            <a href="#"> Sobre nós</a>          
         </div>               
     </div>     
 </div>
