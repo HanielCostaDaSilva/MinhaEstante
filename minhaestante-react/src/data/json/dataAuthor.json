@@ -9,7 +9,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description",
-        "image":"img/autores/Agatha_Christie.jpg",
+        "image":"../Agatha_Christie.jpg",
         "likes":0,
         "linkPage":"#"
 
@@ -24,7 +24,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description Daphne_Du_Maurier",
-        "image":"img/autores/Daphne_Du_Maurier.jpg",
+        "image":"../Daphne_Du_Maurier.jpg",
         "likes":0,
         "linkPage":"#"
 
@@ -39,7 +39,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description George_Orwell",
-        "image":"img/autores/George_Orwell.jpg",
+        "image":"../George_Orwell.jpg",
         "likes":0,
         "linkPage":"#"
     
@@ -54,7 +54,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description Harlan_Coben",
-        "image":"img/autores/Harlan_Coben.jpg",
+        "image":"../Harlan_Coben.jpg",
         "likes":0,
         "linkPage":"#"
     
@@ -69,7 +69,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description Lima_Barreto",
-        "image":"img/autores/Lima_Barreto.jpg",
+        "image":"../Lima_Barreto.jpg",
         "likes":0,
         "linkPage":"#"
     
@@ -84,7 +84,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description Paulo_Coelho",
-        "image":"img/autores/Paulo_Coelho.jpg",
+        "image":"../Paulo_Coelho.jpg",
         "likes":0,
         "linkPage":"#"
     
@@ -99,7 +99,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description George_Orwell",
-        "image":"img/autores/George_Orwell.jpg",
+        "image":"../George_Orwell.jpg",
         "likes":0,
         "linkPage":"#"
     
@@ -114,7 +114,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description Rachel_De_Queiroz",
-        "image":"img/autores/Rachel_De_Queiroz.jpg",
+        "image":"../Rachel_De_Queiroz.jpg",
         "likes":0,
         "linkPage":"#"
     
@@ -129,7 +129,7 @@
         "history":"Nasceu, cresceu, reproduziu, morreu.",
         "booksQuanty":0,
         "description":"Description Aluisio_Azevedo",
-        "image":"img/autores/Aluisio_Azevedo.jpg",
+        "image":"../Aluisio_Azevedo.jpg",
         "likes":0,
         "linkPage":"#"
     

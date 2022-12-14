@@ -1,7 +1,8 @@
 // 26/11/2022
 // Aqui é onde vamos fazer os componentes do site
 import {useEffect, useState} from 'react';
-import '../App.css';
+import '../../App.css';
+import ''
 
 function Carrosel() {
   const [data, setData] = useState([]);
@@ -35,5 +36,4 @@ function Carrosel() {
       </div>
   )
 }
-
-export default Carrosel;
+export default Carrosel();
