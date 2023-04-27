@@ -7,4 +7,3 @@ Neste período 2022.2, fizemos uma continuação do projeto, chamada "Minha Esta
 - **Página de Pesquisa de Livros**;
 - **Elementos dinâmicos**;
 - **Uso acentuado de JavaScript**;
-- **API MinhaEstante-APP**.
