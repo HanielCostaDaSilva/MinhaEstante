@@ -1,0 +1,331 @@
+/*https://tailwindcss.com/docs/installation/using-postcss*/
+/*Imports/ variaveis*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:wght@300&display=swap');
+@import './masterResponsive.css';
+@import './palette.css';
+
+/*body header main footer*/
+body{
+    background: var(--AzulEsbranquicado);
+    font-family: var(--FjallaOne);
+}
+
+/*tags*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, .btn, a, a:visited{
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: var(--Letras);
+}
+
+button,a:hover{
+    color: var(--LinkSelecionado);
+    cursor: pointer;
+    background: rgb(3 9 21);
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+  color: var(--Letras);
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--Letras);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 0;
+}
+p, h2,h3,h4,h5,h6, span,a, a:hover{
+    cursor:default;
+    background:none;
+    margin:0;
+}
+
+
+.hide{
+    display:none;
+}
+/*Flex pronto*/
+.container{
+    display:flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-col{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Cabeçalho da página*/
+
+header{
+    color: var(--Letras);
+    padding-bottom: 10px;
+    background: var(--TitulosPlanoDeFundo);
+    height: fit-content;
+    padding: 0px 10px 0px 10px;
+}
+header > .container{
+    padding-bottom: 5px;
+    border-bottom: 5px dashed rgb(33, 47, 61);
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    align-items: center;
+}
+header > :first-child{
+    position:fixed;
+    background: var(--TitulosPlanoDeFundo);
+    z-index:60;
+    top:0;
+    left:0;
+    opacity: 1.0;
+}
+
+/*Escolhas*/
+
+#escolhas{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    margin-top:63px;
+    padding: 5px;
+}
+#escolhas a{
+    /*margin:0 10px 0px 10px;*/
+    width: fit-content;
+}
+#escolhas .btn{
+    width: 20rem;
+    /*margin: 0px 5% 0px 5%; */
+}
+/*Titulos*/
+
+.titulo{
+    top:0px;
+    font-size: 2rem;
+    background: var(--TitulosPlanoDeFundo);
+    color: var(--Letras);
+    padding: 0.3% 0px 0px 0px;
+    margin: 35px 0px 0px 0px;
+    text-align: center;
+    z-index:10px;
+}
+/*Melhores Livros*/
+
+.melhores{
+    justify-content: space-evenly;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: var(--PlanoDeFundoCarrosel);
+}
+
+.melhores .item img{
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+.melhores .item{
+    position:relative;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width: 50%;
+    margin: 10px 1.5vw 0px 1.5vw;
+    padding: 14px;
+    border-radius: 5%;
+}
+
+/*Ordem e background dos clasificados*/
+.melhores #primeiro{
+    background: linear-gradient(to top, rgba(255, 225, 55, 1), rgba(255, 255, 255, 1));
+    order: 2;
+}
+.melhores #segundo{
+    order: 1;
+    background: linear-gradient(to top, rgba(211, 211, 211,1), rgba(255,255,255,1));
+}
+.melhores #terceiro{
+    order: 3;
+    background: linear-gradient(to top,rgb(65, 26, 26,1),rgb(163, 162, 165,1));
+}
+.melhores #quarto{
+    order: 0;
+    background: linear-gradient(to top, rgb(28, 29, 34,1), rgb(56, 58, 66,1));
+}
+.melhores #quinto{
+    order: 4;
+    background: linear-gradient(to top, rgba(17, 17, 112,1),rgba(88, 88, 156,1));
+}
+/*Cores das .box-livros quando o mouse está em cima*/
+
+.item:hover img{
+    background: none;
+}
+/*cores dos parágrafos*/
+
+#primeiro p,#terceiro p,#quarto p,#quinto p, #segundo p{
+    color: rgb(22, 160, 133);
+      
+}
+.melhores .item p{
+    background:none;
+}
+
+#primeiro:hover p,#terceiro:hover p,#quarto:hover p,#quinto:hover p, #segundo:hover p{
+    color: rgb(31, 126, 70);
+    background:none;
+      
+}
+/*Quantidade de favoritos*/
+
+.coracao{
+    color:rgb(216, 19, 19);
+}
+
+.coracao-quantidade{
+    position:absolute;
+    right:0vw;
+    font-family: var(--Franklin);
+    background: var(--AzulEscuroPlanoDeFundo);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15%;
+    color: white;
+    cursor: pointer;
+}
+
+/*Item*/
+.item{
+    position:relative;
+    transition: all 0.7s ease;
+    
+}
+.active{
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    width:30vw;
+    
+}
+/*Carrosel*/
+
+.carrosel{
+    align-self:center;
+    display:flex;
+    height: 40%;
+    width: 40%;
+    background: var(--PlanoDeFundoCarrosel);
+    padding: 10px;
+}
+.carrosel .item{
+    /*width:14rem;*/
+    padding:5px;
+    background:var(--AzulEscuroPlanoDeFundo);
+    border-radius:5%;
+}
+.carrosel .item:hover{
+    background: var(--AmareloQueimado);
+    padding:5px;
+}
+
+.box-carousel{
+    padding:5px;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+    height:450px;
+}
+.item p{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    height:4.5rem;
+    color: var(--Letras);
+    font-family: var(--FjallaOne);
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 5px 8px 10px 8px;  
+    overflow: auto;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+
+.item:hover img{
+    background:none;
+}
+
+.item:hover p{
+    font-weight:bolder;
+    background:none;
+    color: var(--CinzaAzulado)
+    
+}
+
+.item-livro, .item-autor{
+    margin:10px;
+}
+
+/*Autores em rolagem*/
+
+
+.item-autor{
+    margin:10px 50px 10px 50px;
+    width: calc(15rem + 20px);
+    height:400px;
+}
+
+.box-autores{
+    height: 300px;
+    width: 400px;
+}
+
+
+/*Animações e Transições*/
+
+
+
+/*rodapé*/
+
+/*<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Books Embedded Viewer API Example</title>
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <script type="text/javascript">
+      google.books.load();
+
+      function initialize() {
+        var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+        viewer.load('ISBN:0738531367');
+      }
+
+      google.books.setOnLoadCallback(initialize);
+    </script>
+  </head>
+  <body>
+    <div id="viewerCanvas" style="width: 600px; height: 500px"></div>
+  </body>
+</html>*/

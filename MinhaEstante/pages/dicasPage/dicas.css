@@ -1,0 +1,46 @@
+@import url('../style/masterMain.css');
+body {
+  background-image: url("https://images.unsplash.com/photo-1652957287993-291c8d3a4b21?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764");
+}
+
+#Dicas {
+  border:  2px solid #171618;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  width: 180px;
+  margin: auto;
+}
+body{
+    background-size: cover;
+}
+
+section{
+    height:calc(34rem + 10px);
+    display:flex;
+    flex-direction: column;
+  text-align: center;
+  border: 2px solid #000;
+  background-repeat: space;
+  background-size: contain;
+    background:linear-gradient(to top, rgba(6,17,70,0.7),rgba(1,2,2,0.7));
+  margin: auto;
+  
+  font-family: roboto;
+}
+iframe { 
+  border: 2px solid #000;
+}
+
+p {
+  font-size: 1.5em;
+   color: #fff;
+}
+#voltar{
+    background:var(--HeaderPlanoDeFundo);
+    border-radius:5%;
+    margin-top:15px;
+    padding: 20px;
+}
+
+

@@ -1,0 +1,87 @@
+@import "masterMain.css";
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+:root{
+    --TituloCaixaResultado:rgb(88, 100, 112);
+    --shadowBox: rgba(5, 88, 116, 0.5);
+    --ResultadosSecao: rgba(250, 250, 250, 0.5);
+    --correspondenciaBorder: rgba(250, 250, 250, 0.5);
+    --textoNormalColor: rgb(98, 139, 253);
+    --autorColor: rgb(48, 80, 168);
+    --correspondenciaBackground: rgb(67, 67, 145);
+}
+
+.caixa-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    width: 80%; 
+    width: 80%; 
+    height:50vh;
+    background:rgb(204, 204, 255);
+    text-indent: initial;
+
+}
+.caixa-pesquisa:hover{
+    box-shadow: 0 0 2px 1px var(--shadowBox);
+
+}
+
+#Cabecalho{
+    position: static;
+}
+
+main{
+    min-height:2400px;
+    max-height: 100%;
+}
+#correspondencia{
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    background: var(--correspondenciaBackground);
+    border-bottom: var(--correspondenciaBorder) 1px solid;
+}
+#Resultados .caixa-pesquisa:first-of-type{
+    margin-top: 2rem !important;
+
+}
+
+.capa-box{
+    height: 100%;
+    width: 30%;
+    float: left;
+
+}
+.capa-livro{        
+    height: inherit;
+}
+
+.titulo-livro{
+    font-size: 2.4rem;
+    color: var(--TituloCaixaResultado);
+    font-weight: bolder;
+    font-family: 'Poor Story', cursive;
+}
+.autor-livro,.genero-livro,.paginas-livro{
+    color:var(--textoNormalColor);
+    font-family: Tahoma, sans-serif;;
+    margin: 12px 10px;
+    font-size: 1.4rem;
+}
+.autor-livro{
+    font-size: 1.7rem;
+    color:var(--autorColor);
+    align-self: end;
+    width:fit-content;
+}
+
+.paginas-livro{
+    grid-area: pages;
+}
+.botoes-livro{
+    grid-area: botoes;
+}
